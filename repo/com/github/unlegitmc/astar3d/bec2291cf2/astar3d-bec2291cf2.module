@@ -1,0 +1,53 @@
+{
+  "formatVersion" : "1.1",
+  "createdBy" : {
+    "gradle" : {
+      "version" : "7.1.1"
+    }
+  },
+  "component" : {
+    "group" : "com.github.unlegitmc",
+    "module" : "astar3d",
+    "version" : "bec2291cf2",
+    "attributes" : {
+      "org.gradle.status" : "release"
+    }
+  },
+  "variants" : [ {
+    "name" : "apiElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-api"
+    },
+    "files" : [ {
+      "name" : "astar3d-bec2291cf2.jar",
+      "url" : "astar3d-bec2291cf2.jar",
+      "size" : 4330,
+      "sha512" : "c308af421f257d3f995d48e07eb6ff5cc4752f455efecdb8842a8b7f9a762210b4d9cbc19b2afe5453842412724c2f80c8816844678bbd55af84f5728587c4d2",
+      "sha256" : "8977b85e37c8cd7526e8f25b4a1bb16a2fe6011bbc502923d8bf3dd9a3a6b32b",
+      "sha1" : "45980898053762ce5a45dec9f95c001a031678c4",
+      "md5" : "7b01fc5faecc85f79666488e140e3b4e"
+    } ]
+  }, {
+    "name" : "runtimeElements",
+    "attributes" : {
+      "org.gradle.category" : "library",
+      "org.gradle.dependency.bundling" : "external",
+      "org.gradle.jvm.version" : "8",
+      "org.gradle.libraryelements" : "jar",
+      "org.gradle.usage" : "java-runtime"
+    },
+    "files" : [ {
+      "name" : "astar3d-bec2291cf2.jar",
+      "url" : "astar3d-bec2291cf2.jar",
+      "size" : 4330,
+      "sha512" : "c308af421f257d3f995d48e07eb6ff5cc4752f455efecdb8842a8b7f9a762210b4d9cbc19b2afe5453842412724c2f80c8816844678bbd55af84f5728587c4d2",
+      "sha256" : "8977b85e37c8cd7526e8f25b4a1bb16a2fe6011bbc502923d8bf3dd9a3a6b32b",
+      "sha1" : "45980898053762ce5a45dec9f95c001a031678c4",
+      "md5" : "7b01fc5faecc85f79666488e140e3b4e"
+    } ]
+  } ]
+}

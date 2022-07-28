@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- do_not_remove: published-with-gradle-metadata -->
+<modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.unlegitmc</groupId>
+  <artifactId>astar3d</artifactId>
+  <version>bec2291cf2</version>
+  <name>kotonemywaifu/Astar3d</name>
+  <description>A simple A* 3D path-finding implementation for java</description>
+  <url>https://github.com/kotonemywaifu/Astar3d</url>
+  <inceptionYear>2022</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://api.github.com/licenses/mit</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>kotonemywaifu</id>
+      <name></name>
+      <email></email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git://github.com/kotonemywaifu/Astar3d.git</connection>
+    <developerConnection>scm:git://github.com/kotonemywaifu/Astar3d.git</developerConnection>
+    <url>git://github.com/kotonemywaifu/Astar3d.git</url>
+  </scm>
+</project>
