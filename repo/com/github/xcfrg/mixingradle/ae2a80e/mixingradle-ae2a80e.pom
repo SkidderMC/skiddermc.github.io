@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- do_not_remove: published-with-gradle-metadata -->
+<modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.xcfrg</groupId>
+  <artifactId>mixingradle</artifactId>
+  <version>ae2a80e</version>
+  <name>MixinGradle</name>
+  <description>Gradle plugin that adds the Mixin technology capability to your project.</description>
+  <url>https://github.com/xcfrg/MixinGradle</url>
+  <inceptionYear>2021</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://api.github.com/licenses/mit</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>mixingradle</id>
+      <name>xcfrg</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git://github.com/xcfrg/MixinGradle.git</connection>
+    <developerConnection>scm:git://github.com/xcfrg/MixinGradle.git</developerConnection>
+    <url>git://github.com/xcfrg/MixinGradle.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>17.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.ow2.asm</groupId>
+      <artifactId>asm-debug-all</artifactId>
+      <version>5.0.3</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>
