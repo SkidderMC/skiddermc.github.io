@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- This file is generated automatically! Do not edit! -->
+    <!-- For further information, please refer to https://github.com/jcefmaven/jcefmaven -->
+
+    <groupId>me.friwi</groupId>
+    <artifactId>jcefmaven</artifactId>
+    <version>100.0.14.2</version>
+
+    <packaging>jar</packaging>    
+    <name>JCef Maven</name>
+    <description>This package provides wrappers to initialize the Java Chromium Embedded Framework</description>
+    <url>https://github.com/jcefmaven/jcefmaven/</url>
+    
+    <licenses>
+        <license>
+            <name>Apache-2.0 License</name>
+            <url>https://github.com/jcefmaven/jcefmaven/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+    
+    <developers>
+        <developer>
+            <id>friwidev</id>
+            <name>FriwiDev</name>
+            <email>friwidev@gmail.com</email>
+            <url>https://github.com/FriwiDev</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+    
+    <scm>
+        <connection>scm:git:https://github.com/jcefmaven/jcefmaven</connection>
+        <developerConnection>scm:git:https://github.com/jcefmaven/jcefmaven</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/jcefmaven/jcefmaven</url>
+    </scm>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>me.friwi</groupId>
+            <artifactId>jcef-api</artifactId>
+            <version>jcef-0aee584+cef-100.0.14+g4e5ba66+chromium-100.0.4896.75</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.21</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
+
+</project>
