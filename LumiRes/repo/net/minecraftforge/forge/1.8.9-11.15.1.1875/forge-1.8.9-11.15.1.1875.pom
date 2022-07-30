@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.minecraftforge</groupId>
+  <artifactId>forge</artifactId>
+  <version>1.8.9-11.15.1.1875</version>
+  <name>forge</name>
+  <description>Minecraft Forge API</description>
+  <url>https://github.com/MinecraftForge/MinecraftForge</url>
+  <licenses>
+    <license>
+      <name>Forge Public License</name>
+      <url>https://raw.github.com/MinecraftForge/MinecraftForge/master/MinecraftForge-License.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>cpw</id>
+      <name>cpw</name>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>LexManos</id>
+      <name>Lex Manos</name>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>AbrarSyed</id>
+      <name>Abrar Syed</name>
+      <roles>
+        <role>contributor</role>
+      </roles>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/MinecraftForge/MinecraftForge.git</connection>
+    <developerConnection>scm:git:git@github.com:MinecraftForge/MinecraftForge.git</developerConnection>
+    <url>https://github.com/MinecraftForge/MinecraftForge</url>
+  </scm>
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/MinecraftForge/MinecraftForge/issues</url>
+  </issueManagement>
+</project>

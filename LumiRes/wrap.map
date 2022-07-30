@@ -1,0 +1,1566 @@
+net/minecraft/client/Minecraft java.lang.Object
+17 mcProfiler net.minecraft.profiler.Profiler
+64 running Boolean
+1 debug String
+1 field_175613_B Boolean
+1 field_175614_C Boolean
+1 field_175611_D Boolean
+1 renderChunksMany Boolean
+0 debugUpdateTime Long
+0 fpsCounter Int
+0 prevFrameTime Long
+26 logger org.apache.logging.log4j.Logger
+26 locationMojangPng net.minecraft.util.ResourceLocation
+26 macDisplayModes java.util.List<*>
+18 fileResourcepacks java.io.File
+2 currentServerData net.minecraft.client.multiplayer.ServerData
+1 renderEngine net.minecraft.client.renderer.texture.TextureManager
+10 theMinecraft net.minecraft.client.Minecraft
+2 fullscreen Boolean
+2 enableGLErrorChecking Boolean
+2 hasCrashed Boolean
+2 crashReporter net.minecraft.crash.CrashReport
+2 connectedToRealms Boolean
+1 timer net.minecraft.util.Timer
+2 usageSnooper net.minecraft.profiler.PlayerUsageSnooper
+25 isRunningOnMac Boolean
+18 defaultResourcePacks java.util.List<*>
+17 mcDefaultResourcePack net.minecraft.client.resources.DefaultResourcePack
+2 mcResourcePackRepository net.minecraft.client.resources.ResourcePackRepository
+2 mcLanguageManager net.minecraft.client.resources.LanguageManager
+2 stream net.minecraft.client.stream.IStream
+2 framebufferMc net.minecraft.client.shader.Framebuffer
+2 mcSoundHandler net.minecraft.client.audio.SoundHandler
+2 mcMusicTicker net.minecraft.client.audio.MusicTicker
+2 mojangLogo net.minecraft.util.ResourceLocation
+18 sessionService com.mojang.authlib.minecraft.MinecraftSessionService
+2 skinManager net.minecraft.client.resources.SkinManager
+18 scheduledTasks java.util.Queue<*>
+2 field_175615_aJ Long
+18 mcThread java.lang.Thread
+2 modelManager net.minecraft.client.resources.model.ModelManager
+2 blockRenderDispatcher net.minecraft.client.renderer.BlockRendererDispatcher
+2 debugProfilerName String
+2 renderManager net.minecraft.client.renderer.entity.RenderManager
+2 renderItem net.minecraft.client.renderer.entity.RenderItem
+2 itemRenderer net.minecraft.client.renderer.ItemRenderer
+2 renderViewEntity net.minecraft.entity.Entity
+1 session net.minecraft.util.Session
+2 isGamePaused Boolean
+2 leftClickCounter Int
+2 tempDisplayWidth Int
+2 tempDisplayHeight Int
+2 theIntegratedServer net.minecraft.server.integrated.IntegratedServer
+18 fileAssets java.io.File
+18 launchedVersion String
+1 proxy java.net.Proxy
+2 saveLoader net.minecraft.world.storage.ISaveFormat
+10 debugFPS Int
+1 rightClickDelayTimer Int
+2 serverName String
+2 serverPort Int
+2 joinPlayerCounter Int
+18 jvm64bit Boolean
+18 isDemo Boolean
+2 myNetworkManager net.minecraft.network.NetworkManager
+2 integratedServerIsRunning Boolean
+2 debugCrashKeyPressTime Long
+2 mcResourceManager net.minecraft.client.resources.IReloadableResourceManager
+18 metadataSerializer_ net.minecraft.client.resources.data.IMetadataSerializer
+9 memoryReserve Array<Byte>
+1 playerController net.minecraft.client.multiplayer.PlayerControllerMP
+1 displayWidth Int
+1 displayHeight Int
+1 theWorld net.minecraft.client.multiplayer.WorldClient
+1 renderGlobal net.minecraft.client.renderer.RenderGlobal
+1 thePlayer net.minecraft.client.entity.EntityPlayerSP
+1 pointedEntity net.minecraft.entity.Entity
+1 effectRenderer net.minecraft.client.particle.EffectRenderer
+1 fontRendererObj net.minecraft.client.gui.FontRenderer
+1 standardGalacticFontRenderer net.minecraft.client.gui.FontRenderer
+1 currentScreen net.minecraft.client.gui.GuiScreen
+1 loadingScreen net.minecraft.client.LoadingScreenRenderer
+1 entityRenderer net.minecraft.client.renderer.EntityRenderer
+1 guiAchievement net.minecraft.client.gui.achievement.GuiAchievement
+1 ingameGUI net.minecraft.client.gui.GuiIngame
+1 skipRenderWorld Boolean
+1 objectMouseOver net.minecraft.util.MovingObjectPosition
+1 gameSettings net.minecraft.client.settings.GameSettings
+1 mouseHelper net.minecraft.util.MouseHelper
+17 mcDataDir java.io.File
+1 inGameHasFocus Boolean
+0 systemTime Long
+17 frameTimer net.minecraft.util.FrameTimer
+0 startNanoTime Long
+18 twitchDetails com.mojang.authlib.properties.PropertyMap<*, *>
+18 profileProperties com.mojang.authlib.properties.PropertyMap<*, *>
+2 textureMapBlocks net.minecraft.client.renderer.texture.TextureMap<*, *>
+9 getMinecraft!()Lnet/minecraft/client/Minecraft; net.minecraft.client.Minecraft
+9 getGLMaximumTextureSize!()I Int
+1 getCurrentServerData!()Lnet/minecraft/client/multiplayer/ServerData; net.minecraft.client.multiplayer.ServerData
+1 isIntegratedServerRunning!()Z Boolean
+1 isSingleplayer!()Z Boolean
+1 getIntegratedServer!()Lnet/minecraft/server/integrated/IntegratedServer; net.minecraft.server.integrated.IntegratedServer
+9 stopIntegratedServer!()V void
+1 getPlayerUsageSnooper!()Lnet/minecraft/profiler/PlayerUsageSnooper; net.minecraft.profiler.PlayerUsageSnooper
+9 getSystemTime!()J Long
+1 isFullScreen!()Z Boolean
+1 getSession!()Lnet/minecraft/util/Session; net.minecraft.util.Session
+1 getProxy!()Ljava/net/Proxy; java.net.Proxy
+1 getTextureManager!()Lnet/minecraft/client/renderer/texture/TextureManager; net.minecraft.client.renderer.texture.TextureManager
+1 getResourceManager!()Lnet/minecraft/client/resources/IResourceManager; net.minecraft.client.resources.IResourceManager
+1 getResourcePackRepository!()Lnet/minecraft/client/resources/ResourcePackRepository; net.minecraft.client.resources.ResourcePackRepository
+1 getLanguageManager!()Lnet/minecraft/client/resources/LanguageManager; net.minecraft.client.resources.LanguageManager
+1 isJava64bit!()Z Boolean
+1 isGamePaused!()Z Boolean
+1 getSoundHandler!()Lnet/minecraft/client/audio/SoundHandler; net.minecraft.client.audio.SoundHandler
+1 getAmbientMusicType!()Lnet/minecraft/client/audio/MusicTicker$MusicType; net.minecraft.client.audio.MusicTicker.MusicType
+1 getTwitchStream!()Lnet/minecraft/client/stream/IStream; net.minecraft.client.stream.IStream
+1 dispatchKeypresses!()V void
+1 run!()V void
+1 setDimensionAndSpawnPlayer!(I)V void Int
+1 resize!(II)V void Int;Int
+1 draw!(IIIIIIIIII)V void Int;Int;Int;Int;Int;Int;Int;Int;Int;Int
+2 displayDebugInfo!(J)V void Long
+1 displayGuiScreen!(Lnet/minecraft/client/gui/GuiScreen;)V void net.minecraft.client.gui.GuiScreen
+1 crashed!(Lnet/minecraft/crash/CrashReport;)V void net.minecraft.crash.CrashReport
+1 loadWorld!(Lnet/minecraft/client/multiplayer/WorldClient;)V void net.minecraft.client.multiplayer.WorldClient
+1 loadWorld!(Lnet/minecraft/client/multiplayer/WorldClient;Ljava/lang/String;)V void net.minecraft.client.multiplayer.WorldClient;String
+1 setServerData!(Lnet/minecraft/client/multiplayer/ServerData;)V void net.minecraft.client.multiplayer.ServerData
+1 drawSplashScreen!(Lnet/minecraft/client/renderer/texture/TextureManager;)V void net.minecraft.client.renderer.texture.TextureManager
+2 readImageToBuffer!(Ljava/io/InputStream;)Ljava/nio/ByteBuffer; java.nio.ByteBuffer java.io.InputStream
+1 launchIntegratedServer!(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/world/WorldSettings;)V void String;String;net.minecraft.world.WorldSettings
+1 addServerStatsToSnooper!(Lnet/minecraft/profiler/PlayerUsageSnooper;)V void net.minecraft.profiler.PlayerUsageSnooper
+1 setRenderViewEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+2 pickBlockWithNBT!(Lnet/minecraft/item/Item;ILnet/minecraft/tileentity/TileEntity;)Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack net.minecraft.item.Item;Int;net.minecraft.tileentity.TileEntity
+1 setConnectedToRealms!(Z)V void Boolean
+2 getCurrentAction!()Ljava/lang/String; String
+1 isCallingFromMinecraftThread!()Z Boolean
+1 getSessionService!()Lcom/mojang/authlib/minecraft/MinecraftSessionService; com.mojang.authlib.minecraft.MinecraftSessionService
+1 getSkinManager!()Lnet/minecraft/client/resources/SkinManager; net.minecraft.client.resources.SkinManager
+1 getRenderViewEntity!()Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity
+1 isSnooperEnabled!()Z Boolean
+1 getBlockRendererDispatcher!()Lnet/minecraft/client/renderer/BlockRendererDispatcher; net.minecraft.client.renderer.BlockRendererDispatcher
+1 getRenderManager!()Lnet/minecraft/client/renderer/entity/RenderManager; net.minecraft.client.renderer.entity.RenderManager
+1 getRenderItem!()Lnet/minecraft/client/renderer/entity/RenderItem; net.minecraft.client.renderer.entity.RenderItem
+1 getItemRenderer!()Lnet/minecraft/client/renderer/ItemRenderer; net.minecraft.client.renderer.ItemRenderer
+9 getDebugFPS!()I Int
+1 getFrameTimer!()Lnet/minecraft/util/FrameTimer; net.minecraft.util.FrameTimer
+1 isConnectedToRealms!()Z Boolean
+2 startGame!()V void
+2 registerMetadataSerializers!()V void
+2 initStream!()V void
+2 createDisplay!()V void
+2 setInitialDisplayMode!()V void
+2 setWindowIcon!()V void
+10 isJvm64bit!()Z Boolean
+2 startTimerHackThread!()V void
+2 updateDisplayMode!()V void
+2 runGameLoop!()V void
+1 clickMouse!()V void
+1 rightClickMouse!()V void
+2 updateFramebufferSize!()V void
+2 middleClickMouse!()V void
+1 getFramebuffer!()Lnet/minecraft/client/shader/Framebuffer; net.minecraft.client.shader.Framebuffer
+2 updateDebugProfilerName!(I)V void Int
+1 addGraphicsAndWorldToCrashReport!(Lnet/minecraft/crash/CrashReport;)Lnet/minecraft/crash/CrashReport; net.minecraft.crash.CrashReport net.minecraft.crash.CrashReport
+2 checkGLError!(Ljava/lang/String;)V void String
+1 addServerTypeToSnooper!(Lnet/minecraft/profiler/PlayerUsageSnooper;)V void net.minecraft.profiler.PlayerUsageSnooper
+2 sendClickBlockToController!(Z)V void Boolean
+1 getVersion!()Ljava/lang/String; String
+1 displayCrashReport!(Lnet/minecraft/crash/CrashReport;)V void net.minecraft.crash.CrashReport
+1 isUnicode!()Z Boolean
+1 refreshResources!()V void
+1 getSaveLoader!()Lnet/minecraft/world/storage/ISaveFormat; net.minecraft.world.storage.ISaveFormat
+1 shutdownMinecraftApplet!()V void
+1 updateDisplay!()V void
+4 checkWindowResize!()V void
+1 getLimitFramerate!()I Int
+1 isFramerateLimitBelowMax!()Z Boolean
+1 freeMemory!()V void
+1 shutdown!()V void
+1 setIngameFocus!()V void
+1 setIngameNotInFocus!()V void
+1 displayInGameMenu!()V void
+1 toggleFullscreen!()V void
+1 getMusicTicker!()Lnet/minecraft/client/audio/MusicTicker; net.minecraft.client.audio.MusicTicker
+1 runTick!()V void
+17 isDemo!()Z Boolean
+1 getNetHandler!()Lnet/minecraft/client/network/NetHandlerPlayClient; net.minecraft.client.network.NetHandlerPlayClient
+9 isGuiEnabled!()Z Boolean
+9 isFancyGraphicsEnabled!()Z Boolean
+9 isAmbientOcclusionEnabled!()Z Boolean
+1 getTwitchDetails!()Lcom/mojang/authlib/properties/PropertyMap; com.mojang.authlib.properties.PropertyMap<*, *>
+1 getProfileProperties!()Lcom/mojang/authlib/properties/PropertyMap; com.mojang.authlib.properties.PropertyMap<*, *>
+1 getTextureMapBlocks!()Lnet/minecraft/client/renderer/texture/TextureMap; net.minecraft.client.renderer.texture.TextureMap<*, *>
+
+net/minecraft/entity/Entity java.lang.Object
+1 prevRotationYaw Float
+1 prevRotationPitch Float
+1 onGround Boolean
+1 isCollidedHorizontally Boolean
+1 isCollidedVertically Boolean
+1 isCollided Boolean
+1 velocityChanged Boolean
+1 isInWeb Boolean
+1 isDead Boolean
+1 width Float
+1 height Float
+1 prevDistanceWalkedModified Float
+1 distanceWalkedModified Float
+1 distanceWalkedOnStepModified Float
+1 fallDistance Float
+1 lastTickPosX Double
+1 lastTickPosY Double
+1 lastTickPosZ Double
+1 stepHeight Float
+1 noClip Boolean
+1 entityCollisionReduction Float
+4 rand java.util.Random
+1 ticksExisted Int
+1 fireResistance Int
+4 inWater Boolean
+1 hurtResistantTime Int
+26 ZERO_AABB net.minecraft.util.AxisAlignedBB
+4 firstUpdate Boolean
+4 isImmuneToFire Boolean
+4 dataWatcher net.minecraft.entity.DataWatcher
+1 addedToChunk Boolean
+1 chunkCoordX Int
+1 chunkCoordY Int
+1 chunkCoordZ Int
+1 ignoreFrustumCheck Boolean
+1 isAirBorne Boolean
+1 timeUntilPortal Int
+4 inPortal Boolean
+4 portalCounter Int
+1 dimension Int
+4 lastPortalPos net.minecraft.util.BlockPos
+4 lastPortalVec net.minecraft.util.Vec3
+4 teleportDirection net.minecraft.util.EnumFacing
+4 entityUniqueID java.util.UUID
+2 entityRiderPitchDelta Double
+2 entityRiderYawDelta Double
+2 invulnerable Boolean
+18 cmdResultStats net.minecraft.command.CommandResultStats
+10 nextEntityID Int
+1 serverPosX Int
+1 serverPosY Int
+1 serverPosZ Int
+2 entityId Int
+2 boundingBox net.minecraft.util.AxisAlignedBB
+2 isOutsideBorder Boolean
+2 nextStepDistance Int
+2 fire Int
+1 renderDistanceWeight Double
+1 preventEntitySpawning Boolean
+1 riddenByEntity net.minecraft.entity.Entity
+1 ridingEntity net.minecraft.entity.Entity
+1 forceSpawn Boolean
+1 worldObj net.minecraft.world.World
+1 prevPosX Double
+1 prevPosY Double
+1 prevPosZ Double
+1 posX Double
+1 posY Double
+1 posZ Double
+1 motionX Double
+1 motionY Double
+1 motionZ Double
+1 rotationYaw Float
+1 rotationPitch Float
+1 getEntityId!()I Int
+1 onKillCommand!()V void
+1 getDataWatcher!()Lnet/minecraft/entity/DataWatcher; net.minecraft.entity.DataWatcher
+4 preparePlayerToSpawn!()V void
+1 setDead!()V void
+1 onEntityUpdate!()V void
+1 getMaxInPortalTime!()I Int
+4 setOnFireFromLava!()V void
+1 extinguish!()V void
+4 kill!()V void
+4 getSwimSound!()Ljava/lang/String; String
+4 doBlockCollisions!()V void
+1 isSilent!()Z Boolean
+1 getCollisionBoundingBox!()Lnet/minecraft/util/AxisAlignedBB; net.minecraft.util.AxisAlignedBB
+17 isImmuneToFire!()Z Boolean
+1 isWet!()Z Boolean
+1 isInWater!()Z Boolean
+1 handleWaterMovement!()Z Boolean
+4 resetHeight!()V void
+1 spawnRunningParticles!()V void
+4 createRunningParticles!()V void
+1 handleStatusUpdate!(B)V void Byte
+1 isInRangeToRenderDist!(D)Z Boolean Double
+1 setPositionAndUpdate!(DDD)V void Double;Double;Double
+1 setPositionAndRotation!(DDDFF)V void Double;Double;Double;Float;Float
+1 setPositionAndRotation2!(DDDFFIZ)V void Double;Double;Double;Float;Float;Int;Boolean
+1 rayTrace!(DF)Lnet/minecraft/util/MovingObjectPosition; net.minecraft.util.MovingObjectPosition Double;Float
+4 updateFallState!(DZLnet/minecraft/block/Block;Lnet/minecraft/util/BlockPos;)V void Double;Boolean;net.minecraft.block.Block;net.minecraft.util.BlockPos
+4 setSize!(FF)V void Float;Float
+1 moveFlying!(FFF)V void Float;Float;Float
+1 canCommandSenderUseCommand!(ILjava/lang/String;)Z Boolean Int;String
+1 getExplosionResistance!(Lnet/minecraft/world/Explosion;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)F Float net.minecraft.world.Explosion;net.minecraft.world.World;net.minecraft.util.BlockPos;net.minecraft.block.state.IBlockState
+1 verifyExplosion!(Lnet/minecraft/world/Explosion;Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;F)Z Boolean net.minecraft.world.Explosion;net.minecraft.world.World;net.minecraft.util.BlockPos;net.minecraft.block.state.IBlockState;Float
+1 setWorld!(Lnet/minecraft/world/World;)V void net.minecraft.world.World
+1 isInsideOfMaterial!(Lnet/minecraft/block/material/Material;)Z Boolean net.minecraft.block.material.Material
+1 setEntityBoundingBox!(Lnet/minecraft/util/AxisAlignedBB;)V void net.minecraft.util.AxisAlignedBB
+1 addEntityCrashInfo!(Lnet/minecraft/crash/CrashReportCategory;)V void net.minecraft.crash.CrashReportCategory
+1 moveToBlockPosAndAngles!(Lnet/minecraft/util/BlockPos;FF)V void net.minecraft.util.BlockPos;Float;Float
+4 playStepSound!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;)V void net.minecraft.util.BlockPos;net.minecraft.block.Block
+1028 readEntityFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 addChatMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 setCustomNameTag!(Ljava/lang/String;)V void String
+1 playSound!(Ljava/lang/String;FF)V void String;Float;Float
+1 isSpectatedByPlayer!(Lnet/minecraft/entity/player/EntityPlayerMP;)Z Boolean net.minecraft.entity.player.EntityPlayerMP
+1 setCommandStat!(Lnet/minecraft/command/CommandResultStats$Type;I)V void net.minecraft.command.CommandResultStats.Type;Int
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 mountEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 onKillEntity!(Lnet/minecraft/entity/EntityLivingBase;)V void net.minecraft.entity.EntityLivingBase
+4 applyEnchantments!(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.EntityLivingBase;net.minecraft.entity.Entity
+1 onStruckByLightning!(Lnet/minecraft/entity/effect/EntityLightningBolt;)V void net.minecraft.entity.effect.EntityLightningBolt
+1 interactAt!(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/Vec3;)Z Boolean net.minecraft.entity.player.EntityPlayer;net.minecraft.util.Vec3
+1 dropItem!(Lnet/minecraft/item/Item;I)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem net.minecraft.item.Item;Int
+1 dropItemWithOffset!(Lnet/minecraft/item/Item;IF)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem net.minecraft.item.Item;Int;Float
+1 entityDropItem!(Lnet/minecraft/item/ItemStack;F)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem net.minecraft.item.ItemStack;Float
+132 newDoubleNBTList!([D)Lnet/minecraft/nbt/NBTTagList; net.minecraft.nbt.NBTTagList<*> Array<Double>
+132 newFloatNBTList!([F)Lnet/minecraft/nbt/NBTTagList; net.minecraft.nbt.NBTTagList<*> Array<Float>
+1 setInWeb!()V void
+1 getParts!()[Lnet/minecraft/entity/Entity; Array<net.minecraft.entity.Entity>
+1 getRotationYawHead!()F Float
+1 canAttackWithItem!()Z Boolean
+1 getMaxFallHeight!()I Int
+1 func_181014_aG!()Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3
+1 getTeleportDirection!()Lnet/minecraft/util/EnumFacing; net.minecraft.util.EnumFacing
+1 doesEntityNotTriggerPressurePlate!()Z Boolean
+1 canRenderOnFire!()Z Boolean
+1 getUniqueID!()Ljava/util/UUID; java.util.UUID
+1 isPushedByWater!()Z Boolean
+1 getCustomNameTag!()Ljava/lang/String; String
+1 getAlwaysRenderNameTag!()Z Boolean
+1 getAlwaysRenderNameTagForRender!()Z Boolean
+1 getHorizontalFacing!()Lnet/minecraft/util/EnumFacing; net.minecraft.util.EnumFacing
+4 getHoverEvent!()Lnet/minecraft/event/HoverEvent; net.minecraft.event.HoverEvent
+1 getEntityBoundingBox!()Lnet/minecraft/util/AxisAlignedBB; net.minecraft.util.AxisAlignedBB
+1 getEyeHeight!()F Float
+1 isOutsideBorder!()Z Boolean
+1 getCommandStats!()Lnet/minecraft/command/CommandResultStats; net.minecraft.command.CommandResultStats
+1 getNBTTagCompound!()Lnet/minecraft/nbt/NBTTagCompound; net.minecraft.nbt.NBTTagCompound
+1 isImmuneToExplosions!()Z Boolean
+4 getSplashSound!()Ljava/lang/String; String
+1 isInLava!()Z Boolean
+4 setBeenAttacked!()V void
+1 canBeCollidedWith!()Z Boolean
+1 canBePushed!()Z Boolean
+4 shouldSetPosAfterLoading!()Z Boolean
+20 getEntityString!()Ljava/lang/String; String
+1 onChunkLoad!()V void
+1 isEntityAlive!()Z Boolean
+1 isEntityInsideOpaqueBlock!()Z Boolean
+1 updateRidden!()V void
+1 updateRiderPosition!()V void
+1 getYOffset!()D Double
+1 getMountedYOffset!()D Double
+1 getCollisionBorderSize!()F Float
+1 getLookVec!()Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3
+1 getPortalCooldown!()I Int
+1 performHurtAnimation!()V void
+1 getInventory!()[Lnet/minecraft/item/ItemStack; Array<net.minecraft.item.ItemStack>
+1 isBurning!()Z Boolean
+1 isRiding!()Z Boolean
+1 isSneaking!()Z Boolean
+1 isSprinting!()Z Boolean
+1 isInvisible!()Z Boolean
+1 isEating!()Z Boolean
+1 getAir!()I Int
+1 setPosition!(DDD)V void Double;Double;Double
+1 setLocationAndAngles!(DDDFF)V void Double;Double;Double;Float;Float
+1 getBrightnessForRender!(F)I Int Float
+4 setRotation!(FF)V void Float;Float
+4 setFlag!(IZ)V void Int;Boolean
+2 isLiquidPresentInAABB!(Lnet/minecraft/util/AxisAlignedBB;)Z Boolean net.minecraft.util.AxisAlignedBB
+1 getDistanceSq!(Lnet/minecraft/util/BlockPos;)D Double net.minecraft.util.BlockPos
+1028 writeEntityToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 isEntityInvulnerable!(Lnet/minecraft/util/DamageSource;)Z Boolean net.minecraft.util.DamageSource
+1 addToPlayerScore!(Lnet/minecraft/entity/Entity;I)V void net.minecraft.entity.Entity;Int
+1 setSilent!(Z)V void Boolean
+1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 isOffsetPositionInLiquid!(DDD)Z Boolean Double;Double;Double
+1 getBrightness!(F)F Float Float
+1 setAngles!(FF)V void Float;Float
+1 travelToDimension!(I)V void Int
+1 setCurrentItemOrArmor!(ILnet/minecraft/item/ItemStack;)V void Int;net.minecraft.item.ItemStack
+1 getDistanceSqToCenter!(Lnet/minecraft/util/BlockPos;)D Double net.minecraft.util.BlockPos
+1 writeMountToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)Z Boolean net.minecraft.nbt.NBTTagCompound
+1 setSneaking!(Z)V void Boolean
+1 getPositionVector!()Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3
+1 moveEntity!(DDD)V void Double;Double;Double
+1 getLook!(F)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 Float
+1 setEntityId!(I)V void Int
+1 replaceItemInInventory!(ILnet/minecraft/item/ItemStack;)Z Boolean Int;net.minecraft.item.ItemStack
+1 setPortal!(Lnet/minecraft/util/BlockPos;)V void net.minecraft.util.BlockPos
+1 writeToNBTOptional!(Lnet/minecraft/nbt/NBTTagCompound;)Z Boolean net.minecraft.nbt.NBTTagCompound
+1 onCollideWithPlayer!(Lnet/minecraft/entity/player/EntityPlayer;)V void net.minecraft.entity.player.EntityPlayer
+1 setSprinting!(Z)V void Boolean
+1 getEntityWorld!()Lnet/minecraft/world/World; net.minecraft.world.World
+1 getDistanceSq!(DDD)D Double Double;Double;Double
+1 getPositionEyes!(F)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 Float
+1 fall!(FF)V void Float;Float
+1 setFire!(I)V void Int
+1 writeToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 interactFirst!(Lnet/minecraft/entity/player/EntityPlayer;)Z Boolean net.minecraft.entity.player.EntityPlayer
+1 setInvisible!(Z)V void Boolean
+1 getName!()Ljava/lang/String; String
+1 equals!(Ljava/lang/Object;)Z Boolean java.lang.Object
+1 getCommandSenderEntity!()Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity
+1 getDistance!(DDD)D Double Double;Double;Double
+1 setRotationYawHead!(F)V void Float
+1 getVectorForRotation!(FF)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 Float;Float
+4 dealFireDamage!(I)V void Int
+1 readFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 isInvisibleToPlayer!(Lnet/minecraft/entity/player/EntityPlayer;)Z Boolean net.minecraft.entity.player.EntityPlayer
+1 setEating!(Z)V void Boolean
+1 getDisplayName!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
+1 addVelocity!(DDD)V void Double;Double;Double
+1 setRenderYawOffset!(F)V void Float
+4 getFlag!(I)Z Boolean Int
+1 clientUpdateEntityNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 getDistanceToEntity!(Lnet/minecraft/entity/Entity;)F Float net.minecraft.entity.Entity
+1 setAlwaysRenderNameTag!(Z)V void Boolean
+1028 entityInit!()V void
+1 isInRangeToRender3d!(DDD)Z Boolean Double;Double;Double
+1 setAir!(I)V void Int
+1 getDistanceSqToEntity!(Lnet/minecraft/entity/Entity;)D Double net.minecraft.entity.Entity
+1 setOutsideBorder!(Z)V void Boolean
+1 setVelocity!(DDD)V void Double;Double;Double
+1 onDataWatcherUpdate!(I)V void Int
+1 applyEntityCollision!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+4 pushOutOfBlocks!(DDD)Z Boolean Double;Double;Double
+1 getCollisionBox!(Lnet/minecraft/entity/Entity;)Lnet/minecraft/util/AxisAlignedBB; net.minecraft.util.AxisAlignedBB net.minecraft.entity.Entity
+1 isEntityEqual!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 hitByEntity!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 hasCustomName!()Z Boolean
+2 resetPositionToBB!()V void
+1 copyLocationAndAnglesFrom!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 copyDataFromOld!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 setCommandStats!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+4 canTriggerWalking!()Z Boolean
+1 onUpdate!()V void
+1 sendCommandFeedback!()Z Boolean
+
+net/minecraft/entity/EntityLivingBase net.minecraft.entity.Entity
+26 sprintingSpeedBoostModifierUUID java.util.UUID
+1 prevLimbSwingAmount Float
+1 limbSwingAmount Float
+1 limbSwing Float
+1 maxHurtResistantTime Int
+1 prevCameraPitch Float
+1 cameraPitch Float
+1 randomUnused2 Float
+1 randomUnused1 Float
+1 renderYawOffset Float
+1 prevRenderYawOffset Float
+1 rotationYawHead Float
+1 prevRotationYawHead Float
+1 jumpMovementFactor Float
+4 attackingPlayer net.minecraft.entity.player.EntityPlayer
+4 recentlyHit Int
+4 entityAge Int
+4 prevOnGroundSpeedFactor Float
+4 onGroundSpeedFactor Float
+4 movedDistance Float
+4 prevMovedDistance Float
+4 unused180 Float
+4 scoreValue Int
+4 lastDamage Float
+4 isJumping Boolean
+1 moveStrafing Float
+1 isSwingInProgress Boolean
+1 swingProgressInt Int
+1 arrowHitTimer Int
+1 hurtTime Int
+1 maxHurtTime Int
+1 attackedAtYaw Float
+1 deathTime Int
+1 prevSwingProgress Float
+1 swingProgress Float
+26 sprintingSpeedBoostModifier net.minecraft.entity.ai.attributes.AttributeModifier
+1 moveForward Float
+4 randomYawVelocity Float
+4 newPosRotationIncrements Int
+4 newPosX Double
+4 newPosY Double
+4 newPosZ Double
+4 newRotationYaw Double
+4 newRotationPitch Double
+2 entityLivingToAttack net.minecraft.entity.EntityLivingBase
+2 revengeTimer Int
+2 lastAttacker net.minecraft.entity.EntityLivingBase
+2 lastAttackerTime Int
+2 landMovementFactor Float
+2 jumpTicks Int
+2 absorptionAmount Float
+18 _combatTracker net.minecraft.util.CombatTracker
+18 previousEquipment Array<net.minecraft.item.ItemStack>
+2 potionsNeedUpdate Boolean
+2 attributeMap net.minecraft.entity.ai.attributes.BaseAttributeMap<*, *>
+18 activePotionsMap java.util.Map<*, *>
+4 updatePotionMetadata!()V void
+1 onKillCommand!()V void
+1 onEntityUpdate!()V void
+4 kill!()V void
+1 handleStatusUpdate!(B)V void Byte
+1 setPositionAndRotation2!(DDDFFIZ)V void Double;Double;Double;Float;Float;Int;Boolean
+4 updateFallState!(DZLnet/minecraft/block/Block;Lnet/minecraft/util/BlockPos;)V void Double;Boolean;net.minecraft.block.Block;net.minecraft.util.BlockPos
+1 isOnTeam!(Lnet/minecraft/scoreboard/Team;)Z Boolean net.minecraft.scoreboard.Team
+1 readEntityFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 onDeath!(Lnet/minecraft/util/DamageSource;)V void net.minecraft.util.DamageSource
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 isPotionActive!(Lnet/minecraft/potion/Potion;)Z Boolean net.minecraft.potion.Potion
+4 onNewPotionEffect!(Lnet/minecraft/potion/PotionEffect;)V void net.minecraft.potion.PotionEffect
+4 onChangedPotionEffect!(Lnet/minecraft/potion/PotionEffect;Z)V void net.minecraft.potion.PotionEffect;Boolean
+1 mountEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 knockBack!(Lnet/minecraft/entity/Entity;FDD)V void net.minecraft.entity.Entity;Float;Double;Double
+1 onItemPickup!(Lnet/minecraft/entity/Entity;I)V void net.minecraft.entity.Entity;Int
+1 getEntityAttribute!(Lnet/minecraft/entity/ai/attributes/IAttribute;)Lnet/minecraft/entity/ai/attributes/IAttributeInstance; net.minecraft.entity.ai.attributes.IAttributeInstance net.minecraft.entity.ai.attributes.IAttribute
+4 dropEquipment!(ZI)V void Boolean;Int
+1 getRotationYawHead!()F Float
+1 getAlwaysRenderNameTagForRender!()Z Boolean
+4 applyEntityAttributes!()V void
+1 canBreatheUnderwater!()Z Boolean
+4 onDeathUpdate!()V void
+4 setBeenAttacked!()V void
+1 canBeCollidedWith!()Z Boolean
+1 canBePushed!()Z Boolean
+1 isEntityAlive!()Z Boolean
+1 updateRidden!()V void
+1 getLookVec!()Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3
+1 performHurtAnimation!()V void
+1025 getInventory!()[Lnet/minecraft/item/ItemStack; Array<net.minecraft.item.ItemStack>
+1 writeEntityToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+4 applyArmorCalculations!(Lnet/minecraft/util/DamageSource;F)F Float net.minecraft.util.DamageSource;Float
+1 getActivePotionEffect!(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect; net.minecraft.potion.PotionEffect net.minecraft.potion.Potion
+4 onFinishedPotionEffect!(Lnet/minecraft/potion/PotionEffect;)V void net.minecraft.potion.PotionEffect
+1 setRevengeTarget!(Lnet/minecraft/entity/EntityLivingBase;)V void net.minecraft.entity.EntityLivingBase
+4 getExperiencePoints!(Lnet/minecraft/entity/player/EntityPlayer;)I Int net.minecraft.entity.player.EntityPlayer
+1 renderBrokenItemStack!(Lnet/minecraft/item/ItemStack;)V void net.minecraft.item.ItemStack
+4 dropFewItems!(ZI)V void Boolean;Int
+1025 getHeldItem!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
+4 getSoundVolume!()F Float
+4 getSoundPitch!()F Float
+4 isMovementBlocked!()Z Boolean
+4 getJumpUpwardsMotion!()F Float
+4 jump!()V void
+4 updateAITick!()V void
+4 handleJumpLava!()V void
+1 getAIMoveSpeed!()F Float
+1 isPlayerSleeping!()Z Boolean
+4 updateEntityActionState!()V void
+4 collideWithNearbyEntities!()V void
+1 isServerWorld!()Z Boolean
+1 getAbsorptionAmount!()F Float
+1 getTeam!()Lnet/minecraft/scoreboard/Team; net.minecraft.scoreboard.Team
+4 markPotionsDirty!()V void
+4 canDropLoot!()Z Boolean
+4 isPlayer!()Z Boolean
+1 getRNG!()Ljava/util/Random; java.util.Random
+1 getAITarget!()Lnet/minecraft/entity/EntityLivingBase; net.minecraft.entity.EntityLivingBase
+1 getRevengeTimer!()I Int
+1 getLastAttacker!()Lnet/minecraft/entity/EntityLivingBase; net.minecraft.entity.EntityLivingBase
+1 getLastAttackerTime!()I Int
+1 getAge!()I Int
+4 updatePotionEffects!()V void
+4 resetPotionEffectMetadata!()V void
+1 clearActivePotions!()V void
+1 isEntityUndead!()Z Boolean
+17 getHealth!()F Float
+4 getHurtSound!()Ljava/lang/String; String
+4 getDeathSound!()Ljava/lang/String; String
+4 addRandomDrop!()V void
+1 getTotalArmorValue!()I Int
+1 getCombatTracker!()Lnet/minecraft/util/CombatTracker; net.minecraft.util.CombatTracker
+1 getAttackingEntity!()Lnet/minecraft/entity/EntityLivingBase; net.minecraft.entity.EntityLivingBase
+17 getMaxHealth!()F Float
+17 getArrowCountInEntity!()I Int
+1 swingItem!()V void
+4 updateArmSwingProgress!()V void
+1 getCreatureAttribute!()Lnet/minecraft/entity/EnumCreatureAttribute; net.minecraft.entity.EnumCreatureAttribute
+1025 setCurrentItemOrArmor!(ILnet/minecraft/item/ItemStack;)V void Int;net.minecraft.item.ItemStack
+4 applyPotionDamageCalculations!(Lnet/minecraft/util/DamageSource;F)F Float net.minecraft.util.DamageSource;Float
+1 addPotionEffect!(Lnet/minecraft/potion/PotionEffect;)V void net.minecraft.potion.PotionEffect
+1 isOnSameTeam!(Lnet/minecraft/entity/EntityLivingBase;)Z Boolean net.minecraft.entity.EntityLivingBase
+1 getLook!(F)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 Float
+4 damageEntity!(Lnet/minecraft/util/DamageSource;F)V void net.minecraft.util.DamageSource;Float
+1 isPotionApplicable!(Lnet/minecraft/potion/PotionEffect;)Z Boolean net.minecraft.potion.PotionEffect
+1 setSprinting!(Z)V void Boolean
+1 fall!(FF)V void Float;Float
+1 setRotationYawHead!(F)V void Float
+1 setRenderYawOffset!(F)V void Float
+1 moveEntityWithHeading!(FF)V void Float;Float
+4 entityInit!()V void
+1 heal!(F)V void Float
+4 updateDistance!(FF)F Float Float;Float
+1 sendEnterCombat!()V void
+1 setHealth!(F)V void Float
+1 setJumping!(Z)V void Boolean
+1 sendEndCombat!()V void
+4 damageArmor!(F)V void Float
+4 decreaseAirSupply!(I)I Int Int
+1 isChild!()Z Boolean
+1 setAIMoveSpeed!(F)V void Float
+1 isPotionActive!(I)Z Boolean Int
+1 isOnLadder!()Z Boolean
+1 getSwingProgress!(F)F Float Float
+1 removePotionEffectClient!(I)V void Int
+1 onLivingUpdate!()V void
+1 setAbsorptionAmount!(F)V void Float
+1 removePotionEffect!(I)V void Int
+2 getArmSwingAnimationEnd!()I Int
+4 getFallSoundString!(I)Ljava/lang/String; String Int
+17 setArrowCountInEntity!(I)V void Int
+1025 getEquipmentInSlot!(I)Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack Int
+1 setLastAttacker!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1025 getCurrentArmor!(I)Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack Int
+1 dismountEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 attackEntityAsMob!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+4 collideWithEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 canEntityBeSeen!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 onUpdate!()V void
+1 getAttributeMap!()Lnet/minecraft/entity/ai/attributes/BaseAttributeMap; net.minecraft.entity.ai.attributes.BaseAttributeMap<*, *>
+
+net/minecraft/entity/player/EntityPlayer net.minecraft.entity.EntityLivingBase
+2 theInventoryEnderChest net.minecraft.inventory.InventoryEnderChest
+1 sleepTimer Int
+1 capabilities net.minecraft.entity.player.PlayerCapabilities
+1 experienceLevel Int
+1 experienceTotal Int
+1 experience Float
+4 speedOnGround Float
+1 speedInAir Float
+1 fishEntity net.minecraft.entity.projectile.EntityFishHook
+18 gameProfile com.mojang.authlib.GameProfile
+2 hasReducedDebug Boolean
+1 renderOffsetY Float
+1 inventory net.minecraft.entity.player.InventoryPlayer
+1 inventoryContainer net.minecraft.inventory.Container
+1 openContainer net.minecraft.inventory.Container
+4 foodStats net.minecraft.util.FoodStats
+4 flyToggleTimer Int
+1 prevCameraYaw Float
+1 cameraYaw Float
+1 xpCooldown Int
+1 prevChasingPosX Double
+1 prevChasingPosY Double
+1 prevChasingPosZ Double
+1 chasingPosX Double
+1 chasingPosY Double
+1 chasingPosZ Double
+1 sleeping Boolean
+1 playerLocation net.minecraft.util.BlockPos
+1 renderOffsetX Float
+1 renderOffsetZ Float
+2 spawnChunk net.minecraft.util.BlockPos
+2 spawnForced Boolean
+2 startMinecartRidingCoordinate net.minecraft.util.BlockPos
+2 xpSeed Int
+2 itemInUse net.minecraft.item.ItemStack
+1 itemInUseCount Int
+2 lastXPSound Int
+1 preparePlayerToSpawn!()V void
+1 setDead!()V void
+1 getMaxInPortalTime!()I Int
+4 getSwimSound!()Ljava/lang/String; String
+4 resetHeight!()V void
+1 handleStatusUpdate!(B)V void Byte
+1 addExhaustion!(F)V void Float
+1 addExperienceLevel!(I)V void Int
+1 displayVillagerTradeGui!(Lnet/minecraft/entity/IMerchant;)V void net.minecraft.entity.IMerchant
+1 openEditCommandBlock!(Lnet/minecraft/command/server/CommandBlockLogic;)V void net.minecraft.command.server.CommandBlockLogic
+9 getBedSpawnLocation!(Lnet/minecraft/world/World;Lnet/minecraft/util/BlockPos;Z)Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos net.minecraft.world.World;net.minecraft.util.BlockPos;Boolean
+1 setGameType!(Lnet/minecraft/world/WorldSettings$GameType;)V void net.minecraft.world.WorldSettings.GameType
+1 getToolDigEfficiency!(Lnet/minecraft/block/Block;)F Float net.minecraft.block.Block
+1 openEditSign!(Lnet/minecraft/tileentity/TileEntitySign;)V void net.minecraft.tileentity.TileEntitySign
+1 trySleep!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/entity/player/EntityPlayer$EnumStatus; net.minecraft.entity.player.EntityPlayer.EnumStatus net.minecraft.util.BlockPos
+1 canPlayerEdit!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraft/item/ItemStack;)Z Boolean net.minecraft.util.BlockPos;net.minecraft.util.EnumFacing;net.minecraft.item.ItemStack
+1 setSpawnPoint!(Lnet/minecraft/util/BlockPos;Z)V void net.minecraft.util.BlockPos;Boolean
+9 getUUID!(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID; java.util.UUID com.mojang.authlib.GameProfile
+2 func_175139_a!(Lnet/minecraft/util/EnumFacing;)V void net.minecraft.util.EnumFacing
+1 readEntityFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 playSound!(Ljava/lang/String;FF)V void String;Float;Float
+1 func_175145_a!(Lnet/minecraft/stats/StatBase;)V void net.minecraft.stats.StatBase
+1 addStat!(Lnet/minecraft/stats/StatBase;I)V void net.minecraft.stats.StatBase;Int
+1 displayGUIChest!(Lnet/minecraft/inventory/IInventory;)V void net.minecraft.inventory.IInventory
+1 displayGui!(Lnet/minecraft/world/IInteractionObject;)V void net.minecraft.world.IInteractionObject
+1 canOpen!(Lnet/minecraft/world/LockCode;)Z Boolean net.minecraft.world.LockCode
+1 onDeath!(Lnet/minecraft/util/DamageSource;)V void net.minecraft.util.DamageSource
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 onKillEntity!(Lnet/minecraft/entity/EntityLivingBase;)V void net.minecraft.entity.EntityLivingBase
+1 displayGUIHorse!(Lnet/minecraft/entity/passive/EntityHorse;Lnet/minecraft/inventory/IInventory;)V void net.minecraft.entity.passive.EntityHorse;net.minecraft.inventory.IInventory
+1 joinEntityItemWithWorld!(Lnet/minecraft/entity/item/EntityItem;)V void net.minecraft.entity.item.EntityItem
+1 canAttackPlayer!(Lnet/minecraft/entity/player/EntityPlayer;)Z Boolean net.minecraft.entity.player.EntityPlayer
+1 clonePlayer!(Lnet/minecraft/entity/player/EntityPlayer;Z)V void net.minecraft.entity.player.EntityPlayer;Boolean
+1 isWearing!(Lnet/minecraft/entity/player/EnumPlayerModelParts;)Z Boolean net.minecraft.entity.player.EnumPlayerModelParts
+1 displayGUIBook!(Lnet/minecraft/item/ItemStack;)V void net.minecraft.item.ItemStack
+1 setItemInUse!(Lnet/minecraft/item/ItemStack;I)V void net.minecraft.item.ItemStack;Int
+1 dropPlayerItemWithRandomChoice!(Lnet/minecraft/item/ItemStack;Z)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem net.minecraft.item.ItemStack;Boolean
+1 dropItem!(Lnet/minecraft/item/ItemStack;ZZ)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem net.minecraft.item.ItemStack;Boolean;Boolean
+1 dropOneItem!(Z)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem Boolean
+1 wakeUpPlayer!(ZZZ)V void Boolean;Boolean;Boolean
+1 setInWeb!()V void
+1 isPushedByWater!()Z Boolean
+1 getAlwaysRenderNameTagForRender!()Z Boolean
+1 getEyeHeight!()F Float
+4 applyEntityAttributes!()V void
+4 getSplashSound!()Ljava/lang/String; String
+1 isEntityInsideOpaqueBlock!()Z Boolean
+1 updateRidden!()V void
+1 getYOffset!()D Double
+1 getPortalCooldown!()I Int
+1 getInventory!()[Lnet/minecraft/item/ItemStack; Array<net.minecraft.item.ItemStack>
+1 removeExperienceLevel!(I)V void Int
+1 canHarvestBlock!(Lnet/minecraft/block/Block;)Z Boolean net.minecraft.block.Block
+1 writeEntityToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)V void net.minecraft.nbt.NBTTagCompound
+1 addChatComponentMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+9 getOfflineUUID!(Ljava/lang/String;)Ljava/util/UUID; java.util.UUID String
+1 triggerAchievement!(Lnet/minecraft/stats/StatBase;)V void net.minecraft.stats.StatBase
+1 onCriticalHit!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 addToPlayerScore!(Lnet/minecraft/entity/Entity;I)V void net.minecraft.entity.Entity;Int
+4 getExperiencePoints!(Lnet/minecraft/entity/player/EntityPlayer;)I Int net.minecraft.entity.player.EntityPlayer
+4 updateItemUse!(Lnet/minecraft/item/ItemStack;I)V void net.minecraft.item.ItemStack;Int
+1 getHeldItem!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
+4 isMovementBlocked!()Z Boolean
+1 jump!()V void
+1 getAIMoveSpeed!()F Float
+1 isPlayerSleeping!()Z Boolean
+4 updateEntityActionState!()V void
+1 getAbsorptionAmount!()F Float
+1 getTeam!()Lnet/minecraft/scoreboard/Team; net.minecraft.scoreboard.Team
+1 getItemInUse!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
+1 getItemInUseCount!()I Int
+1 isUsingItem!()Z Boolean
+1 getItemInUseDuration!()I Int
+1 stopUsingItem!()V void
+1 clearItemInUse!()V void
+1 isBlocking!()Z Boolean
+1 getScore!()I Int
+1 getArmorVisibility!()F Float
+1 getCurrentEquippedItem!()Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack
+4 isPlayer!()Z Boolean
+4 getHurtSound!()Ljava/lang/String; String
+4 getDeathSound!()Ljava/lang/String; String
+1 getTotalArmorValue!()I Int
+1 setCurrentItemOrArmor!(ILnet/minecraft/item/ItemStack;)V void Int;net.minecraft.item.ItemStack
+1 onEnchantmentCritical!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 destroyCurrentEquippedItem!()V void
+1 respawnPlayer!()V void
+1 isUser!()Z Boolean
+1 getGameProfile!()Lcom/mojang/authlib/GameProfile; com.mojang.authlib.GameProfile
+1 getBedOrientationInDegrees!()F Float
+1 isPlayerFullyAsleep!()Z Boolean
+1 getSleepTimer!()I Int
+1 getBedLocation!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 isSpawnForced!()Z Boolean
+1 getXPSeed!()I Int
+1 xpBarCap!()I Int
+1 getFoodStats!()Lnet/minecraft/util/FoodStats; net.minecraft.util.FoodStats
+1 shouldHeal!()Z Boolean
+1 isAllowEdit!()Z Boolean
+1 getInventoryEnderChest!()Lnet/minecraft/inventory/InventoryEnderChest; net.minecraft.inventory.InventoryEnderChest
+1 getWorldScoreboard!()Lnet/minecraft/scoreboard/Scoreboard; net.minecraft.scoreboard.Scoreboard
+1 hasReducedDebug!()Z Boolean
+1 replaceItemInInventory!(ILnet/minecraft/item/ItemStack;)Z Boolean Int;net.minecraft.item.ItemStack
+4 damageEntity!(Lnet/minecraft/util/DamageSource;F)V void net.minecraft.util.DamageSource;Float
+2 collideWithPlayer!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 fall!(FF)V void Float;Float
+1 getName!()Ljava/lang/String; String
+1 attackTargetEntityWithCurrentItem!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 isInvisibleToPlayer!(Lnet/minecraft/entity/player/EntityPlayer;)Z Boolean net.minecraft.entity.player.EntityPlayer
+1 getDisplayName!()Lnet/minecraft/util/IChatComponent; net.minecraft.util.IChatComponent
+1 moveEntityWithHeading!(FF)V void Float;Float
+4 entityInit!()V void
+4 damageArmor!(F)V void Float
+1 canEat!(Z)Z Boolean Boolean
+1 addMovementStat!(DDD)V void Double;Double;Double
+1 setReducedDebug!(Z)V void Boolean
+2 addMountedMovementStat!(DDD)V void Double;Double;Double
+1 onLivingUpdate!()V void
+1 setAbsorptionAmount!(F)V void Float
+1 closeScreen!()V void
+4 getFallSoundString!(I)Ljava/lang/String; String Int
+2 isInBed!()Z Boolean
+1 getEquipmentInSlot!(I)Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack Int
+1 getCurrentArmor!(I)Lnet/minecraft/item/ItemStack; net.minecraft.item.ItemStack Int
+1 setScore!(I)V void Int
+4 onItemUseFinish!()V void
+1 addScore!(I)V void Int
+4 canTriggerWalking!()Z Boolean
+1 sendPlayerAbilities!()V void
+1 onUpdate!()V void
+1 addExperience!(I)V void Int
+1 interactWith!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 sendCommandFeedback!()Z Boolean
+1025 isSpectator!()Z Boolean
+
+net/minecraft/client/multiplayer/WorldClient net.minecraft.world.World
+18 mc net.minecraft.client.Minecraft
+18 previousActiveChunkSet java.util.Set<*>
+2 sendQueue net.minecraft.client.network.NetHandlerPlayClient
+2 clientChunkProvider net.minecraft.client.multiplayer.ChunkProviderClient
+18 entityList java.util.Set<*>
+18 entitySpawnQueue java.util.Set<*>
+1 sendQuittingDisconnectingPacket!()V void
+1 removeAllEntities!()V void
+1 makeFireworks!(DDDDDDLnet/minecraft/nbt/NBTTagCompound;)V void Double;Double;Double;Double;Double;Double;net.minecraft.nbt.NBTTagCompound
+1 playSound!(DDDLjava/lang/String;FFZ)V void Double;Double;Double;String;Float;Float;Boolean
+1 getEntityByID!(I)Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity Int
+1 invalidateBlockReceiveRegion!(IIIIII)V void Int;Int;Int;Int;Int;Int
+1 addEntityToWorld!(ILnet/minecraft/entity/Entity;)V void Int;net.minecraft.entity.Entity
+1 setWorldScoreboard!(Lnet/minecraft/scoreboard/Scoreboard;)V void net.minecraft.scoreboard.Scoreboard
+1 addWorldInfoToCrashReport!(Lnet/minecraft/crash/CrashReport;)Lnet/minecraft/crash/CrashReportCategory; net.minecraft.crash.CrashReportCategory net.minecraft.crash.CrashReport
+1 playSoundAtPos!(Lnet/minecraft/util/BlockPos;Ljava/lang/String;FFZ)V void net.minecraft.util.BlockPos;String;Float;Float;Boolean
+1 onEntityAdded!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 doVoidFogParticles!(III)V void Int;Int;Int
+1 doPreChunk!(IIZ)V void Int;Int;Boolean
+1 setWorldTime!(J)V void Long
+1 invalidateRegionAndSetBlock!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z Boolean net.minecraft.util.BlockPos;net.minecraft.block.state.IBlockState
+1 onEntityRemoved!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 tick!()V void
+1 spawnEntityInWorld!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 removeEntityFromWorld!(I)Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity Int
+1 removeEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+4 updateBlocks!()V void
+4 createChunkProvider!()Lnet/minecraft/world/chunk/IChunkProvider; net.minecraft.world.chunk.IChunkProvider
+4 updateWeather!()V void
+4 getRenderDistanceChunks!()I Int
+
+net/minecraft/world/World java.lang.Object
+1 villageCollectionObj net.minecraft.village.VillageCollection<*>
+17 theProfiler net.minecraft.profiler.Profiler
+4 worldScoreboard net.minecraft.scoreboard.Scoreboard
+17 isRemote Boolean
+4 activeChunkSet java.util.Set<*>
+4 spawnHostileMobs Boolean
+4 spawnPeacefulMobs Boolean
+0 lightUpdateBlockList Array<Int>
+2 skylightSubtracted Int
+2 lastLightningBolt Int
+18 theCalendar java.util.Calendar
+2 ambientTickCountdown Int
+2 processingLoadedTiles Boolean
+18 worldBorder net.minecraft.world.border.WorldBorder
+2 seaLevel Int
+18 addedTileEntityList java.util.List<*>
+18 tileEntitiesToBeRemoved java.util.List<*>
+2 cloudColour Long
+4 scheduledUpdatesAreImmediate Boolean
+17 loadedEntityList java.util.List<*>
+20 unloadedEntityList java.util.List<*>
+17 loadedTileEntityList java.util.List<*>
+17 tickableTileEntities java.util.List<*>
+17 playerEntities java.util.List<*>
+17 weatherEffects java.util.List<*>
+4 updateLCG Int
+20 DIST_HASH_MAGIC Int
+1 prevRainingStrength Float
+1 rainingStrength Float
+1 prevThunderingStrength Float
+1 thunderingStrength Float
+17 rand java.util.Random
+17 provider net.minecraft.world.WorldProvider
+4 worldAccesses java.util.List<*>
+4 chunkProvider net.minecraft.world.chunk.IChunkProvider
+20 saveHandler net.minecraft.world.storage.ISaveHandler
+4 worldInfo net.minecraft.world.storage.WorldInfo
+4 findingSpawnPoint Boolean
+4 mapStorage net.minecraft.world.storage.MapStorage
+20 entitiesById net.minecraft.util.IntHashMap<*, *>
+1 getProviderName!()Ljava/lang/String; String
+1 isBlockIndirectlyGettingPowered!(Lnet/minecraft/util/BlockPos;)I Int net.minecraft.util.BlockPos
+1 calculateInitialSkylight!()V void
+1 setSpawnPoint!(Lnet/minecraft/util/BlockPos;)V void net.minecraft.util.BlockPos
+4 calculateInitialWeather!()V void
+1 isRainingAt!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+4 setActivePlayerChunksAndCheckLight!()V void
+1 isBlockinHighHumidity!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 getDifficultyForLocation!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/world/DifficultyInstance; net.minecraft.world.DifficultyInstance net.minecraft.util.BlockPos
+1 getSeaLevel!()I Int
+2 isWater!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 getWorldType!()Lnet/minecraft/world/WorldType; net.minecraft.world.WorldType
+1 sendQuittingDisconnectingPacket!()V void
+1 checkSessionLock!()V void
+1 getSeed!()J Long
+1 getTotalWorldTime!()J Long
+1 getWorldTime!()J Long
+1 getSpawnPoint!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 getChunkProvider!()Lnet/minecraft/world/chunk/IChunkProvider; net.minecraft.world.chunk.IChunkProvider
+1 getSaveHandler!()Lnet/minecraft/world/storage/ISaveHandler; net.minecraft.world.storage.ISaveHandler
+1 getWorldInfo!()Lnet/minecraft/world/storage/WorldInfo; net.minecraft.world.storage.WorldInfo
+1 getGameRules!()Lnet/minecraft/world/GameRules; net.minecraft.world.GameRules
+1 isThundering!()Z Boolean
+1 isRaining!()Z Boolean
+1 getMapStorage!()Lnet/minecraft/world/storage/MapStorage; net.minecraft.world.storage.MapStorage
+1 getHeight!()I Int
+1 getActualHeight!()I Int
+1 extendedLevelsInChunkCache!()Z Boolean
+1 getHorizon!()D Double
+1 getCurrentDate!()Ljava/util/Calendar; java.util.Calendar
+1 getScoreboard!()Lnet/minecraft/scoreboard/Scoreboard; net.minecraft.scoreboard.Scoreboard
+1 getClosestPlayer!(DDDD)Lnet/minecraft/entity/player/EntityPlayer; net.minecraft.entity.player.EntityPlayer Double;Double;Double;Double
+1 makeFireworks!(DDDDDDLnet/minecraft/nbt/NBTTagCompound;)V void Double;Double;Double;Double;Double;Double;net.minecraft.nbt.NBTTagCompound
+1 playSoundEffect!(DDDLjava/lang/String;FF)V void Double;Double;Double;String;Float;Float
+1 playSound!(DDDLjava/lang/String;FFZ)V void Double;Double;Double;String;Float;Float;Boolean
+1 calculateSkylightSubtracted!(F)I Int Float
+1 getEntityByID!(I)Lnet/minecraft/entity/Entity; net.minecraft.entity.Entity Int
+1 getChunkFromChunkCoords!(II)Lnet/minecraft/world/chunk/Chunk; net.minecraft.world.chunk.Chunk Int;Int
+1 setRandomSeed!(III)Ljava/util/Random; java.util.Random Int;Int;Int
+1 markBlocksDirtyVertical!(IIII)V void Int;Int;Int;Int
+2 isAreaLoaded!(IIIIIIZ)Z Boolean Int;Int;Int;Int;Int;Int;Boolean
+4 playMoodSoundAndCheckLight!(IILnet/minecraft/world/chunk/Chunk;)V void Int;Int;net.minecraft.world.chunk.Chunk
+4 isChunkLoaded!(IIZ)Z Boolean Int;Int;Boolean
+1 playBroadcastSound!(ILnet/minecraft/util/BlockPos;I)V void Int;net.minecraft.util.BlockPos;Int
+130 spawnParticle!(IZDDDDDD[I)V void Int;Boolean;Double;Double;Double;Double;Double;Double;Array<Int>
+1 setTotalWorldTime!(J)V void Long
+1 addWorldAccess!(Lnet/minecraft/world/IWorldAccess;)V void net.minecraft.world.IWorldAccess
+1 initialize!(Lnet/minecraft/world/WorldSettings;)V void net.minecraft.world.WorldSettings
+9 doesBlockHaveSolidTopSurface!(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.world.IBlockAccess;net.minecraft.util.BlockPos
+1 getLightFromNeighborsFor!(Lnet/minecraft/world/EnumSkyBlock;Lnet/minecraft/util/BlockPos;)I Int net.minecraft.world.EnumSkyBlock;net.minecraft.util.BlockPos
+1 setLightFor!(Lnet/minecraft/world/EnumSkyBlock;Lnet/minecraft/util/BlockPos;I)V void net.minecraft.world.EnumSkyBlock;net.minecraft.util.BlockPos;Int
+1 forceBlockUpdateTick!(Lnet/minecraft/block/Block;Lnet/minecraft/util/BlockPos;Ljava/util/Random;)V void net.minecraft.block.Block;net.minecraft.util.BlockPos;java.util.Random
+1 canBlockBePlaced!(Lnet/minecraft/block/Block;Lnet/minecraft/util/BlockPos;ZLnet/minecraft/util/EnumFacing;Lnet/minecraft/entity/Entity;Lnet/minecraft/item/ItemStack;)Z Boolean net.minecraft.block.Block;net.minecraft.util.BlockPos;Boolean;net.minecraft.util.EnumFacing;net.minecraft.entity.Entity;net.minecraft.item.ItemStack
+1 addTileEntity!(Lnet/minecraft/tileentity/TileEntity;)Z Boolean net.minecraft.tileentity.TileEntity
+1 isInsideBorder!(Lnet/minecraft/world/border/WorldBorder;Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.world.border.WorldBorder;net.minecraft.entity.Entity
+1 isAreaLoaded!(Lnet/minecraft/world/gen/structure/StructureBoundingBox;)Z Boolean net.minecraft.world.gen.structure.StructureBoundingBox
+1 isMaterialInBB!(Lnet/minecraft/util/AxisAlignedBB;Lnet/minecraft/block/material/Material;)Z Boolean net.minecraft.util.AxisAlignedBB;net.minecraft.block.material.Material
+1 handleMaterialAcceleration!(Lnet/minecraft/util/AxisAlignedBB;Lnet/minecraft/block/material/Material;Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.util.AxisAlignedBB;net.minecraft.block.material.Material;net.minecraft.entity.Entity
+1 checkNoEntityCollision!(Lnet/minecraft/util/AxisAlignedBB;Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.util.AxisAlignedBB;net.minecraft.entity.Entity
+1 getBlockDensity!(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/AxisAlignedBB;)F Float net.minecraft.util.Vec3;net.minecraft.util.AxisAlignedBB
+1 rayTraceBlocks!(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;)Lnet/minecraft/util/MovingObjectPosition; net.minecraft.util.MovingObjectPosition net.minecraft.util.Vec3;net.minecraft.util.Vec3
+1 rayTraceBlocks!(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;Z)Lnet/minecraft/util/MovingObjectPosition; net.minecraft.util.MovingObjectPosition net.minecraft.util.Vec3;net.minecraft.util.Vec3;Boolean
+1 rayTraceBlocks!(Lnet/minecraft/util/Vec3;Lnet/minecraft/util/Vec3;ZZZ)Lnet/minecraft/util/MovingObjectPosition; net.minecraft.util.MovingObjectPosition net.minecraft.util.Vec3;net.minecraft.util.Vec3;Boolean;Boolean;Boolean
+1 addWorldInfoToCrashReport!(Lnet/minecraft/crash/CrashReport;)Lnet/minecraft/crash/CrashReportCategory; net.minecraft.crash.CrashReportCategory net.minecraft.crash.CrashReport
+2 isValid!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 isAreaLoaded!(Lnet/minecraft/util/BlockPos;I)Z Boolean net.minecraft.util.BlockPos;Int
+1 isAreaLoaded!(Lnet/minecraft/util/BlockPos;IZ)Z Boolean net.minecraft.util.BlockPos;Int;Boolean
+2 getRawLight!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/world/EnumSkyBlock;)I Int net.minecraft.util.BlockPos;net.minecraft.world.EnumSkyBlock
+1 isBlockTickPending!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;)Z Boolean net.minecraft.util.BlockPos;net.minecraft.block.Block
+1 scheduleUpdate!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;I)V void net.minecraft.util.BlockPos;net.minecraft.block.Block;Int
+1 updateBlockTick!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;II)V void net.minecraft.util.BlockPos;net.minecraft.block.Block;Int;Int
+1 notifyNeighborsOfStateExcept!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;Lnet/minecraft/util/EnumFacing;)V void net.minecraft.util.BlockPos;net.minecraft.block.Block;net.minecraft.util.EnumFacing
+1 setTileEntity!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/tileentity/TileEntity;)V void net.minecraft.util.BlockPos;net.minecraft.tileentity.TileEntity
+1 setBlockState!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Z Boolean net.minecraft.util.BlockPos;net.minecraft.block.state.IBlockState
+1 setBlockState!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;I)Z Boolean net.minecraft.util.BlockPos;net.minecraft.block.state.IBlockState;Int
+1 isAreaLoaded!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos;net.minecraft.util.BlockPos
+1 isAreaLoaded!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/BlockPos;Z)Z Boolean net.minecraft.util.BlockPos;net.minecraft.util.BlockPos;Boolean
+1 getStrongPower!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;)I Int net.minecraft.util.BlockPos;net.minecraft.util.EnumFacing
+1 playRecord!(Lnet/minecraft/util/BlockPos;Ljava/lang/String;)V void net.minecraft.util.BlockPos;String
+1 isBlockLoaded!(Lnet/minecraft/util/BlockPos;Z)Z Boolean net.minecraft.util.BlockPos;Boolean
+129 spawnParticle!(Lnet/minecraft/util/EnumParticleTypes;DDDDDD[I)V void net.minecraft.util.EnumParticleTypes;Double;Double;Double;Double;Double;Double;Array<Int>
+129 spawnParticle!(Lnet/minecraft/util/EnumParticleTypes;ZDDDDDD[I)V void net.minecraft.util.EnumParticleTypes;Boolean;Double;Double;Double;Double;Double;Double;Array<Int>
+1 getPlayerEntityByName!(Ljava/lang/String;)Lnet/minecraft/entity/player/EntityPlayer; net.minecraft.entity.player.EntityPlayer String
+1 setItemData!(Ljava/lang/String;Lnet/minecraft/world/WorldSavedData;)V void String;net.minecraft.world.WorldSavedData
+1 getStrongholdPos!(Ljava/lang/String;Lnet/minecraft/util/BlockPos;)Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos String;net.minecraft.util.BlockPos
+1 onEntityAdded!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 setEntityState!(Lnet/minecraft/entity/Entity;B)V void net.minecraft.entity.Entity;Byte
+1 getClosestPlayerToEntity!(Lnet/minecraft/entity/Entity;D)Lnet/minecraft/entity/player/EntityPlayer; net.minecraft.entity.player.EntityPlayer net.minecraft.entity.Entity;Double
+1 createExplosion!(Lnet/minecraft/entity/Entity;DDDFZ)Lnet/minecraft/world/Explosion; net.minecraft.world.Explosion net.minecraft.entity.Entity;Double;Double;Double;Float;Boolean
+1 newExplosion!(Lnet/minecraft/entity/Entity;DDDFZZ)Lnet/minecraft/world/Explosion; net.minecraft.world.Explosion net.minecraft.entity.Entity;Double;Double;Double;Float;Boolean;Boolean
+1 getSkyColor!(Lnet/minecraft/entity/Entity;F)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 net.minecraft.entity.Entity;Float
+1 playSoundAtEntity!(Lnet/minecraft/entity/Entity;Ljava/lang/String;FF)V void net.minecraft.entity.Entity;String;Float;Float
+1 updateEntityWithOptionalForce!(Lnet/minecraft/entity/Entity;Z)V void net.minecraft.entity.Entity;Boolean
+1 playAuxSFXAtEntity!(Lnet/minecraft/entity/player/EntityPlayer;ILnet/minecraft/util/BlockPos;I)V void net.minecraft.entity.player.EntityPlayer;Int;net.minecraft.util.BlockPos;Int
+1 isBlockModifiable!(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.entity.player.EntityPlayer;net.minecraft.util.BlockPos
+1 extinguishFire!(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;)Z Boolean net.minecraft.entity.player.EntityPlayer;net.minecraft.util.BlockPos;net.minecraft.util.EnumFacing
+1 playSoundToNearExcept!(Lnet/minecraft/entity/player/EntityPlayer;Ljava/lang/String;FF)V void net.minecraft.entity.player.EntityPlayer;String;Float;Float
+1 tickUpdates!(Z)Z Boolean Boolean
+1 setAllowedSpawnTypes!(ZZ)V void Boolean;Boolean
+1 getDifficulty!()Lnet/minecraft/world/EnumDifficulty; net.minecraft.world.EnumDifficulty
+1 getSkylightSubtracted!()I Int
+1 getLastLightningBolt!()I Int
+1 isFindingSpawnPoint!()Z Boolean
+1 getVillageCollection!()Lnet/minecraft/village/VillageCollection; net.minecraft.village.VillageCollection<*>
+1 getWorldBorder!()Lnet/minecraft/world/border/WorldBorder; net.minecraft.world.border.WorldBorder
+1 init!()Lnet/minecraft/world/World; net.minecraft.world.World
+1 isAnyPlayerWithinRangeAt!(DDDD)Z Boolean Double;Double;Double;Double
+1 getSunBrightness!(F)F Float Float
+1 setSeaLevel!(I)V void Int
+1 getChunksLowestHorizon!(II)I Int Int;Int
+1 markBlockRangeForRenderUpdate!(IIIIII)V void Int;Int;Int;Int;Int;Int
+1 playAuxSFX!(ILnet/minecraft/util/BlockPos;I)V void Int;net.minecraft.util.BlockPos;Int
+1 setWorldTime!(J)V void Long
+1 removeWorldAccess!(Lnet/minecraft/world/IWorldAccess;)V void net.minecraft.world.IWorldAccess
+1 getLightFor!(Lnet/minecraft/world/EnumSkyBlock;Lnet/minecraft/util/BlockPos;)I Int net.minecraft.world.EnumSkyBlock;net.minecraft.util.BlockPos
+1 markTileEntityForRemoval!(Lnet/minecraft/tileentity/TileEntity;)V void net.minecraft.tileentity.TileEntity
+1 isAreaLoaded!(Lnet/minecraft/world/gen/structure/StructureBoundingBox;Z)Z Boolean net.minecraft.world.gen.structure.StructureBoundingBox;Boolean
+1 checkNoEntityCollision!(Lnet/minecraft/util/AxisAlignedBB;)Z Boolean net.minecraft.util.AxisAlignedBB
+1 isAABBInMaterial!(Lnet/minecraft/util/AxisAlignedBB;Lnet/minecraft/block/material/Material;)Z Boolean net.minecraft.util.AxisAlignedBB;net.minecraft.block.material.Material
+1 getBiomeGenForCoords!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/world/biome/BiomeGenBase; net.minecraft.world.biome.BiomeGenBase net.minecraft.util.BlockPos
+1 getCombinedLight!(Lnet/minecraft/util/BlockPos;I)I Int net.minecraft.util.BlockPos;Int
+1 notifyNeighborsRespectDebug!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;)V void net.minecraft.util.BlockPos;net.minecraft.block.Block
+1 scheduleBlockUpdate!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;II)V void net.minecraft.util.BlockPos;net.minecraft.block.Block;Int;Int
+1 markChunkDirty!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/tileentity/TileEntity;)V void net.minecraft.util.BlockPos;net.minecraft.tileentity.TileEntity
+1 markBlockRangeForRenderUpdate!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/BlockPos;)V void net.minecraft.util.BlockPos;net.minecraft.util.BlockPos
+1 isSidePowered!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;)Z Boolean net.minecraft.util.BlockPos;net.minecraft.util.EnumFacing
+1 destroyBlock!(Lnet/minecraft/util/BlockPos;Z)Z Boolean net.minecraft.util.BlockPos;Boolean
+1 getUniqueDataId!(Ljava/lang/String;)I Int String
+1 getPlayerEntityByUUID!(Ljava/util/UUID;)Lnet/minecraft/entity/player/EntityPlayer; net.minecraft.entity.player.EntityPlayer java.util.UUID
+1 onEntityRemoved!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 tick!()V void
+1 getCelestialAngle!(F)F Float Float
+1 setSkylightSubtracted!(I)V void Int
+1 isSpawnChunk!(II)Z Boolean Int;Int
+1 sendBlockBreakProgress!(ILnet/minecraft/util/BlockPos;I)V void Int;net.minecraft.util.BlockPos;Int
+1 checkLightFor!(Lnet/minecraft/world/EnumSkyBlock;Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.world.EnumSkyBlock;net.minecraft.util.BlockPos
+1 checkBlockCollision!(Lnet/minecraft/util/AxisAlignedBB;)Z Boolean net.minecraft.util.AxisAlignedBB
+1 getGroundAboveSeaLevel!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/Block; net.minecraft.block.Block net.minecraft.util.BlockPos
+1 notifyNeighborsOfStateChange!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;)V void net.minecraft.util.BlockPos;net.minecraft.block.Block
+1 addBlockEvent!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;II)V void net.minecraft.util.BlockPos;net.minecraft.block.Block;Int;Int
+1 getRedstonePower!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/util/EnumFacing;)I Int net.minecraft.util.BlockPos;net.minecraft.util.EnumFacing
+1 getLight!(Lnet/minecraft/util/BlockPos;Z)I Int net.minecraft.util.BlockPos;Boolean
+1 addWeatherEffect!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 updateAllPlayersSleepingFlag!()V void
+1 getCelestialAngleRadians!(F)F Float Float
+1 setLastLightningBolt!(I)V void Int
+1 isAnyLiquid!(Lnet/minecraft/util/AxisAlignedBB;)Z Boolean net.minecraft.util.AxisAlignedBB
+1 isAirBlock!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 notifyBlockOfStateChange!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;)V void net.minecraft.util.BlockPos;net.minecraft.block.Block
+1 isBlockNormalCube!(Lnet/minecraft/util/BlockPos;Z)Z Boolean net.minecraft.util.BlockPos;Boolean
+1 spawnEntityInWorld!(Lnet/minecraft/entity/Entity;)Z Boolean net.minecraft.entity.Entity
+1 getCloudColour!(F)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 Float
+1 isFlammableWithin!(Lnet/minecraft/util/AxisAlignedBB;)Z Boolean net.minecraft.util.AxisAlignedBB
+1 isBlockLoaded!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 updateComparatorOutputLevel!(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/Block;)V void net.minecraft.util.BlockPos;net.minecraft.block.Block
+1 canBlockFreeze!(Lnet/minecraft/util/BlockPos;Z)Z Boolean net.minecraft.util.BlockPos;Boolean
+1 removeEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 getFogColor!(F)Lnet/minecraft/util/Vec3; net.minecraft.util.Vec3 Float
+1 getChunkFromBlockCoords!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/world/chunk/Chunk; net.minecraft.world.chunk.Chunk net.minecraft.util.BlockPos
+1 canSnowAt!(Lnet/minecraft/util/BlockPos;Z)Z Boolean net.minecraft.util.BlockPos;Boolean
+1 removePlayerEntityDangerously!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 setInitialSpawnLocation!()V void
+1 getStarBrightness!(F)F Float Float
+1 setBlockToAir!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 updateEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+4 updateBlocks!()V void
+1 getThunderStrength!(F)F Float Float
+1 markBlockForUpdate!(Lnet/minecraft/util/BlockPos;)V void net.minecraft.util.BlockPos
+1 joinEntityInSurroundings!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 updateEntities!()V void
+1 setThunderStrength!(F)V void Float
+1 canSeeSky!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 getRainStrength!(F)F Float Float
+1 canBlockSeeSky!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1028 createChunkProvider!()Lnet/minecraft/world/chunk/IChunkProvider; net.minecraft.world.chunk.IChunkProvider
+1 setRainStrength!(F)V void Float
+1 getLight!(Lnet/minecraft/util/BlockPos;)I Int net.minecraft.util.BlockPos
+1 getLightFromNeighbors!(Lnet/minecraft/util/BlockPos;)I Int net.minecraft.util.BlockPos
+1 getHeight!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos net.minecraft.util.BlockPos
+1 notifyLightSet!(Lnet/minecraft/util/BlockPos;)V void net.minecraft.util.BlockPos
+1 getLightBrightness!(Lnet/minecraft/util/BlockPos;)F Float net.minecraft.util.BlockPos
+4 updateWeather!()V void
+1 getBlockState!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/block/state/IBlockState; net.minecraft.block.state.IBlockState net.minecraft.util.BlockPos
+1028 getRenderDistanceChunks!()I Int
+1 getPrecipitationHeight!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos net.minecraft.util.BlockPos
+1 getTopSolidOrLiquidBlock!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos net.minecraft.util.BlockPos
+1 getTileEntity!(Lnet/minecraft/util/BlockPos;)Lnet/minecraft/tileentity/TileEntity; net.minecraft.tileentity.TileEntity net.minecraft.util.BlockPos
+1 removeTileEntity!(Lnet/minecraft/util/BlockPos;)V void net.minecraft.util.BlockPos
+1 isBlockFullCube!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 getWorldChunkManager!()Lnet/minecraft/world/biome/WorldChunkManager; net.minecraft.world.biome.WorldChunkManager
+1 canBlockFreezeWater!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 isDaytime!()Z Boolean
+1 canBlockFreezeNoWater!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 getMoonPhase!()I Int
+1 checkLight!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 getCurrentMoonPhaseFactor!()F Float
+1 getStrongPower!(Lnet/minecraft/util/BlockPos;)I Int net.minecraft.util.BlockPos
+1 getDebugLoadedEntities!()Ljava/lang/String; String
+1 isBlockPowered!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+
+net/minecraft/client/entity/EntityPlayerSP net.minecraft.client.entity.AbstractClientPlayer
+17 sendQueue net.minecraft.client.network.NetHandlerPlayClient
+1 movementInput net.minecraft.util.MovementInput
+1 timeInPortal Float
+1 prevTimeInPortal Float
+18 statWriter net.minecraft.stats.StatFileWriter
+2 lastReportedPosX Double
+2 lastReportedPosY Double
+2 lastReportedPosZ Double
+2 lastReportedYaw Float
+2 lastReportedPitch Float
+2 serverSneakState Boolean
+1 serverSprintState Boolean
+2 positionUpdateTicks Int
+2 hasValidHealth Boolean
+2 clientBrand String
+1 horseJumpPowerCounter Int
+1 horseJumpPower Float
+4 mc net.minecraft.client.Minecraft
+4 sprintToggleTimer Int
+1 sprintingTicksLeft Int
+1 renderArmYaw Float
+1 renderArmPitch Float
+1 prevRenderArmYaw Float
+1 prevRenderArmPitch Float
+4 isCurrentViewEntity!()Z Boolean
+1 setXPStats!(FII)V void Float;Int;Int
+1 canCommandSenderUseCommand!(ILjava/lang/String;)Z Boolean Int;String
+1 displayVillagerTradeGui!(Lnet/minecraft/entity/IMerchant;)V void net.minecraft.entity.IMerchant
+1 openEditCommandBlock!(Lnet/minecraft/command/server/CommandBlockLogic;)V void net.minecraft.command.server.CommandBlockLogic
+1 openEditSign!(Lnet/minecraft/tileentity/TileEntitySign;)V void net.minecraft.tileentity.TileEntitySign
+1 addChatMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 playSound!(Ljava/lang/String;FF)V void String;Float;Float
+1 addStat!(Lnet/minecraft/stats/StatBase;I)V void net.minecraft.stats.StatBase;Int
+1 displayGUIChest!(Lnet/minecraft/inventory/IInventory;)V void net.minecraft.inventory.IInventory
+1 displayGui!(Lnet/minecraft/world/IInteractionObject;)V void net.minecraft.world.IInteractionObject
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 mountEntity!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 displayGUIHorse!(Lnet/minecraft/entity/passive/EntityHorse;Lnet/minecraft/inventory/IInventory;)V void net.minecraft.entity.passive.EntityHorse;net.minecraft.inventory.IInventory
+1 joinEntityItemWithWorld!(Lnet/minecraft/entity/item/EntityItem;)V void net.minecraft.entity.item.EntityItem
+1 displayGUIBook!(Lnet/minecraft/item/ItemStack;)V void net.minecraft.item.ItemStack
+1 dropOneItem!(Z)Lnet/minecraft/entity/item/EntityItem; net.minecraft.entity.item.EntityItem Boolean
+1 isSneaking!()Z Boolean
+1 addChatComponentMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 onCriticalHit!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 updateEntityActionState!()V void
+1 isServerWorld!()Z Boolean
+1 swingItem!()V void
+1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 onEnchantmentCritical!(Lnet/minecraft/entity/Entity;)V void net.minecraft.entity.Entity
+1 respawnPlayer!()V void
+1 isUser!()Z Boolean
+4 damageEntity!(Lnet/minecraft/util/DamageSource;F)V void net.minecraft.util.DamageSource;Float
+1 setSprinting!(Z)V void Boolean
+2 isOpenBlockSpace!(Lnet/minecraft/util/BlockPos;)Z Boolean net.minecraft.util.BlockPos
+1 sendChatMessage!(Ljava/lang/String;)V void String
+1 setClientBrand!(Ljava/lang/String;)V void String
+1 heal!(F)V void Float
+4 pushOutOfBlocks!(DDD)Z Boolean Double;Double;Double
+1 onLivingUpdate!()V void
+1 closeScreen!()V void
+1 setPlayerSPHealth!(F)V void Float
+1 onUpdateWalkingPlayer!()V void
+1 closeScreenAndDropStack!()V void
+4 sendHorseJump!()V void
+1 sendPlayerAbilities!()V void
+1 onUpdate!()V void
+1 sendHorseInventory!()V void
+1 getClientBrand!()Ljava/lang/String; String
+1 getStatFileWriter!()Lnet/minecraft/stats/StatFileWriter; net.minecraft.stats.StatFileWriter
+1 isRidingHorse!()Z Boolean
+1 getHorseJumpPower!()F Float
+
+net/minecraft/client/entity/EntityOtherPlayerMP net.minecraft.client.entity.AbstractClientPlayer
+2 isItemInUse Boolean
+2 otherPlayerMPPosRotationIncrements Int
+2 otherPlayerMPX Double
+2 otherPlayerMPY Double
+2 otherPlayerMPZ Double
+2 otherPlayerMPYaw Double
+2 otherPlayerMPPitch Double
+1 setPositionAndRotation2!(DDDFFIZ)V void Double;Double;Double;Float;Float;Int;Boolean
+1 canCommandSenderUseCommand!(ILjava/lang/String;)Z Boolean Int;String
+1 addChatMessage!(Lnet/minecraft/util/IChatComponent;)V void net.minecraft.util.IChatComponent
+1 attackEntityFrom!(Lnet/minecraft/util/DamageSource;F)Z Boolean net.minecraft.util.DamageSource;Float
+1 getPosition!()Lnet/minecraft/util/BlockPos; net.minecraft.util.BlockPos
+1 setCurrentItemOrArmor!(ILnet/minecraft/item/ItemStack;)V void Int;net.minecraft.item.ItemStack
+1 onLivingUpdate!()V void
+1 onUpdate!()V void
+
+net/minecraft/client/entity/AbstractClientPlayer net.minecraft.entity.player.EntityPlayer
+2 playerInfo net.minecraft.client.network.NetworkPlayerInfo
+1 hasPlayerInfo!()Z Boolean
+9 getDownloadImageSkin!(Lnet/minecraft/util/ResourceLocation;Ljava/lang/String;)Lnet/minecraft/client/renderer/ThreadDownloadImageData; net.minecraft.client.renderer.ThreadDownloadImageData net.minecraft.util.ResourceLocation;String
+4 getPlayerInfo!()Lnet/minecraft/client/network/NetworkPlayerInfo; net.minecraft.client.network.NetworkPlayerInfo
+9 getLocationSkin!(Ljava/lang/String;)Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation String
+1 hasSkin!()Z Boolean
+1 getLocationSkin!()Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation
+1 getLocationCape!()Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation
+1 getSkinType!()Ljava/lang/String; String
+1 getFovModifier!()F Float
+1 isSpectator!()Z Boolean
+
+net/minecraft/util/MovementInput java.lang.Object
+1 moveStrafe Float
+1 moveForward Float
+1 jump Boolean
+1 sneak Boolean
+1 updatePlayerMoveState!()V void
+
+net/minecraft/potion/Potion java.lang.Object
+25 field_180147_A net.minecraft.potion.Potion
+25 field_180148_B net.minecraft.potion.Potion
+25 field_180149_C net.minecraft.potion.Potion
+25 field_180143_D net.minecraft.potion.Potion
+25 field_180144_E net.minecraft.potion.Potion
+25 field_180145_F net.minecraft.potion.Potion
+25 field_180146_G net.minecraft.potion.Potion
+1 id Int
+18 isBadEffect Boolean
+18 liquidColor Int
+2 name String
+2 statusIconIndex Int
+2 effectiveness Double
+2 usable Boolean
+25 potionTypes Array<net.minecraft.potion.Potion>
+25 field_180151_b net.minecraft.potion.Potion
+25 moveSpeed net.minecraft.potion.Potion
+25 moveSlowdown net.minecraft.potion.Potion
+25 digSpeed net.minecraft.potion.Potion
+25 digSlowdown net.minecraft.potion.Potion
+25 damageBoost net.minecraft.potion.Potion
+25 heal net.minecraft.potion.Potion
+25 harm net.minecraft.potion.Potion
+25 jump net.minecraft.potion.Potion
+25 confusion net.minecraft.potion.Potion
+25 regeneration net.minecraft.potion.Potion
+25 resistance net.minecraft.potion.Potion
+25 fireResistance net.minecraft.potion.Potion
+25 waterBreathing net.minecraft.potion.Potion
+25 invisibility net.minecraft.potion.Potion
+25 blindness net.minecraft.potion.Potion
+25 nightVision net.minecraft.potion.Potion
+25 hunger net.minecraft.potion.Potion
+25 weakness net.minecraft.potion.Potion
+25 poison net.minecraft.potion.Potion
+25 wither net.minecraft.potion.Potion
+25 healthBoost net.minecraft.potion.Potion
+25 absorption net.minecraft.potion.Potion
+25 saturation net.minecraft.potion.Potion
+25 field_180153_z net.minecraft.potion.Potion
+26 field_180150_I java.util.Map<*, *>
+18 attributeModifierMap java.util.Map<*, *>
+1 getName!()Ljava/lang/String; String
+4 setEffectiveness!(D)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion Double
+1 isReady!(II)Z Boolean Int;Int
+1 getAttributeModifierAmount!(ILnet/minecraft/entity/ai/attributes/AttributeModifier;)D Double Int;net.minecraft.entity.ai.attributes.AttributeModifier
+9 getDurationString!(Lnet/minecraft/potion/PotionEffect;)Ljava/lang/String; String net.minecraft.potion.PotionEffect
+1 affectEntity!(Lnet/minecraft/entity/Entity;Lnet/minecraft/entity/Entity;Lnet/minecraft/entity/EntityLivingBase;ID)V void net.minecraft.entity.Entity;net.minecraft.entity.Entity;net.minecraft.entity.EntityLivingBase;Int;Double
+1 performEffect!(Lnet/minecraft/entity/EntityLivingBase;I)V void net.minecraft.entity.EntityLivingBase;Int
+1 registerPotionAttributeModifier!(Lnet/minecraft/entity/ai/attributes/IAttribute;Ljava/lang/String;DI)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion net.minecraft.entity.ai.attributes.IAttribute;String;Double;Int
+1 isInstant!()Z Boolean
+4 setIconIndex!(II)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion Int;Int
+9 getPotionFromResourceLocation!(Ljava/lang/String;)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion String
+1 setPotionName!(Ljava/lang/String;)Lnet/minecraft/potion/Potion; net.minecraft.potion.Potion String
+1 getId!()I Int
+1 hasStatusIcon!()Z Boolean
+1 getStatusIconIndex!()I Int
+1 isBadEffect!()Z Boolean
+1 getEffectiveness!()D Double
+1 isUsable!()Z Boolean
+1 getLiquidColor!()I Int
+1 removeAttributesModifiersFromEntity!(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/ai/attributes/BaseAttributeMap;I)V void net.minecraft.entity.EntityLivingBase;net.minecraft.entity.ai.attributes.BaseAttributeMap<*, *>;Int
+1 applyAttributesModifiersToEntity!(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/ai/attributes/BaseAttributeMap;I)V void net.minecraft.entity.EntityLivingBase;net.minecraft.entity.ai.attributes.BaseAttributeMap<*, *>;Int
+net/minecraft/potion/PotionEffect java.lang.Object
+26 LOGGER org.apache.logging.log4j.Logger
+2 potionID Int
+2 duration Int
+2 amplifier Int
+2 isSplashPotion Boolean
+2 isAmbient Boolean
+2 isPotionDurationMax Boolean
+2 showParticles Boolean
+1 getPotionID!()I Int
+1 writeCustomPotionEffectToNBT!(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound; net.minecraft.nbt.NBTTagCompound net.minecraft.nbt.NBTTagCompound
+1 combine!(Lnet/minecraft/potion/PotionEffect;)V void net.minecraft.potion.PotionEffect
+1 onUpdate!(Lnet/minecraft/entity/EntityLivingBase;)Z Boolean net.minecraft.entity.EntityLivingBase
+1 setSplashPotion!(Z)V void Boolean
+1 getDuration!()I Int
+9 readCustomPotionEffectFromNBT!(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/potion/PotionEffect; net.minecraft.potion.PotionEffect net.minecraft.nbt.NBTTagCompound
+1 performEffect!(Lnet/minecraft/entity/EntityLivingBase;)V void net.minecraft.entity.EntityLivingBase
+1 setPotionDurationMax!(Z)V void Boolean
+1 getAmplifier!()I Int
+1 getIsAmbient!()Z Boolean
+1 equals!(Ljava/lang/Object;)Z Boolean java.lang.Object
+1 getIsShowParticles!()Z Boolean
+1 getEffectName!()Ljava/lang/String; String
+1 getIsPotionDurationMax!()Z Boolean
+2 deincrementDuration!()I Int
+
+net/minecraft/client/settings/GameSettings java.lang.Object
+1 touchscreen Boolean
+1 overrideWidth Int
+1 overrideHeight Int
+1 heldItemTooltips Boolean
+1 chatScale Float
+1 chatWidth Float
+1 chatHeightUnfocused Float
+1 chatHeightFocused Float
+1 showInventoryAchievementHint Boolean
+1 mipmapLevels Int
+1 streamBytesPerPixel Float
+1 streamMicVolume Float
+1 streamGameVolume Float
+1 streamKbps Float
+1 streamFps Float
+1 streamCompression Int
+1 streamSendMetadata Boolean
+1 streamPreferredServer String
+1 streamChatEnabled Int
+1 streamChatUserFilter Int
+1 streamMicToggleBehavior Int
+1 useNativeTransport Boolean
+1 entityShadows Boolean
+1 realmsNotifications Boolean
+1 keyBindForward net.minecraft.client.settings.KeyBinding
+1 keyBindLeft net.minecraft.client.settings.KeyBinding
+1 mouseSensitivity Float
+1 hideGUI Boolean
+1 thirdPersonView Int
+1 showDebugInfo Boolean
+1 showDebugProfilerChart Boolean
+1 showLagometer Boolean
+1 lastServer String
+1 smoothCamera Boolean
+1 debugCamEnable Boolean
+1 fovSetting Float
+1 gammaSetting Float
+1 saturation Float
+1 guiScale Int
+1 particleSetting Int
+1 language String
+1 forceUnicodeFont Boolean
+26 logger org.apache.logging.log4j.Logger
+26 gson com.google.gson.Gson
+26 typeListString java.lang.reflect.ParameterizedType
+26 GUISCALES Array<String>
+26 PARTICLES Array<String>
+26 AMBIENT_OCCLUSIONS Array<String>
+26 STREAM_COMPRESSIONS Array<String>
+26 STREAM_CHAT_MODES Array<String>
+26 STREAM_CHAT_FILTER_MODES Array<String>
+26 STREAM_MIC_MODES Array<String>
+26 CLOUDS_TYPES Array<String>
+1 keyBindBack net.minecraft.client.settings.KeyBinding
+1 keyBindRight net.minecraft.client.settings.KeyBinding
+1 keyBindJump net.minecraft.client.settings.KeyBinding
+1 keyBindSneak net.minecraft.client.settings.KeyBinding
+1 keyBindSprint net.minecraft.client.settings.KeyBinding
+1 keyBindInventory net.minecraft.client.settings.KeyBinding
+1 keyBindUseItem net.minecraft.client.settings.KeyBinding
+1 keyBindDrop net.minecraft.client.settings.KeyBinding
+1 keyBindAttack net.minecraft.client.settings.KeyBinding
+1 keyBindPickBlock net.minecraft.client.settings.KeyBinding
+1 keyBindChat net.minecraft.client.settings.KeyBinding
+1 keyBindPlayerList net.minecraft.client.settings.KeyBinding
+1 keyBindCommand net.minecraft.client.settings.KeyBinding
+1 keyBindScreenshot net.minecraft.client.settings.KeyBinding
+1 keyBindTogglePerspective net.minecraft.client.settings.KeyBinding
+1 keyBindSmoothCamera net.minecraft.client.settings.KeyBinding
+1 keyBindFullscreen net.minecraft.client.settings.KeyBinding
+1 keyBindSpectatorOutlines net.minecraft.client.settings.KeyBinding
+1 keyBindStreamStartStop net.minecraft.client.settings.KeyBinding
+1 keyBindStreamPauseUnpause net.minecraft.client.settings.KeyBinding
+1 keyBindStreamCommercials net.minecraft.client.settings.KeyBinding
+1 keyBindStreamToggleMic net.minecraft.client.settings.KeyBinding
+1 keyBindsHotbar Array<net.minecraft.client.settings.KeyBinding>
+1 keyBindings Array<net.minecraft.client.settings.KeyBinding>
+4 mc net.minecraft.client.Minecraft
+1 difficulty net.minecraft.world.EnumDifficulty
+1 invertMouse Boolean
+18 setModelParts java.util.Set<*>
+2 optionsFile java.io.File
+1 renderDistanceChunks Int
+1 viewBobbing Boolean
+1 anaglyph Boolean
+1 fboEnable Boolean
+1 limitFramerate Int
+1 clouds Int
+1 fancyGraphics Boolean
+1 ambientOcclusion Int
+1 resourcePacks java.util.List<*>
+1 incompatibleResourcePacks java.util.List<*>
+1 chatVisibility net.minecraft.entity.player.EntityPlayer.EnumChatVisibility
+1 chatColours Boolean
+1 chatLinks Boolean
+1 chatLinksPrompt Boolean
+1 chatOpacity Float
+1 snooperEnabled Boolean
+1 fullScreen Boolean
+1 enableVsync Boolean
+1 useVbo Boolean
+1 allowBlockAlternatives Boolean
+1 reducedDebugInfo Boolean
+1 hideServerAddress Boolean
+1 advancedItemTooltips Boolean
+1 pauseOnLostFocus Boolean
+2 mapSoundLevels java.util.Map<*, *>
+1 loadOptions!()V void
+9 isKeyDown!(Lnet/minecraft/client/settings/KeyBinding;)Z Boolean net.minecraft.client.settings.KeyBinding
+1 setOptionKeyBinding!(Lnet/minecraft/client/settings/KeyBinding;I)V void net.minecraft.client.settings.KeyBinding;Int
+1 getOptionFloatValue!(Lnet/minecraft/client/settings/GameSettings$Options;)F Float net.minecraft.client.settings.GameSettings.Options
+1 setOptionFloatValue!(Lnet/minecraft/client/settings/GameSettings$Options;F)V void net.minecraft.client.settings.GameSettings.Options;Float
+1 setOptionValue!(Lnet/minecraft/client/settings/GameSettings$Options;I)V void net.minecraft.client.settings.GameSettings.Options;Int
+1 getSoundLevel!(Lnet/minecraft/client/audio/SoundCategory;)F Float net.minecraft.client.audio.SoundCategory
+1 setSoundLevel!(Lnet/minecraft/client/audio/SoundCategory;F)V void net.minecraft.client.audio.SoundCategory;Float
+2 parseFloat!(Ljava/lang/String;)F Float String
+1 switchModelPartEnabled!(Lnet/minecraft/entity/player/EnumPlayerModelParts;)V void net.minecraft.entity.player.EnumPlayerModelParts
+1 setModelPartEnabled!(Lnet/minecraft/entity/player/EnumPlayerModelParts;Z)V void net.minecraft.entity.player.EnumPlayerModelParts;Boolean
+10 getTranslation!([Ljava/lang/String;I)Ljava/lang/String; String Array<String>;Int
+1 saveOptions!()V void
+1 getOptionOrdinalValue!(Lnet/minecraft/client/settings/GameSettings$Options;)Z Boolean net.minecraft.client.settings.GameSettings.Options
+1 sendSettingsToServer!()V void
+9 getKeyDisplayString!(I)Ljava/lang/String; String Int
+1 getKeyBinding!(Lnet/minecraft/client/settings/GameSettings$Options;)Ljava/lang/String; String net.minecraft.client.settings.GameSettings.Options
+1 shouldRenderClouds!()I Int
+1 isUsingNativeTransport!()Z Boolean
+
+net/minecraft/client/settings/KeyBinding java.lang.Object
+26 keybindArray java.util.List<*>
+26 keybindSet java.util.Set<*>
+18 keyDescription String
+18 keyCodeDefault Int
+18 keyCategory String
+2 keyCode Int
+1 pressed Boolean
+2 pressTime Int
+26 hash net.minecraft.util.IntHashMap<*, *>
+9 unPressAllKeys!()V void
+9 onTick!(I)V void Int
+9 setKeyBindState!(IZ)V void Int;Boolean
+1 compareTo!(Lnet/minecraft/client/settings/KeyBinding;)I Int net.minecraft.client.settings.KeyBinding
+9 resetKeyBindingArrayAndHash!()V void
+1 setKeyCode!(I)V void Int
+4161 compareTo!(Ljava/lang/Object;)I Int java.lang.Object
+1 isKeyDown!()Z Boolean
+1 getKeyCategory!()Ljava/lang/String; String
+1 isPressed!()Z Boolean
+1 getKeyDescription!()Ljava/lang/String; String
+1 getKeyCodeDefault!()I Int
+1 getKeyCode!()I Int
+2 unpressKey!()V void
+
+net/minecraft/client/gui/FontRenderer java.lang.Object
+1 FONT_HEIGHT Int
+1 fontRandom java.util.Random
+26 unicodePageLocations Array<net.minecraft.util.ResourceLocation>
+4 charWidth Array<Int>
+4 glyphWidth Array<Byte>
+2 colorCode Array<Int>
+20 locationFontTexture net.minecraft.util.ResourceLocation
+18 renderEngine net.minecraft.client.renderer.texture.TextureManager
+4 posX Float
+4 posY Float
+2 unicodeFlag Boolean
+2 bidiFlag Boolean
+2 red Float
+2 blue Float
+2 green Float
+2 alpha Float
+2 textColor Int
+2 randomStyle Boolean
+2 boldStyle Boolean
+2 italicStyle Boolean
+2 underlineStyle Boolean
+2 strikethroughStyle Boolean
+1 getUnicodeFlag!()Z Boolean
+1 getCharWidth!(C)I Int Character
+2 renderChar!(CZ)F Float Character;Boolean
+2 getUnicodePageLocation!(I)Lnet/minecraft/util/ResourceLocation; net.minecraft.util.ResourceLocation Int
+4 renderDefaultChar!(IZ)F Float Int;Boolean
+1 onResourceManagerReload!(Lnet/minecraft/client/resources/IResourceManager;)V void net.minecraft.client.resources.IResourceManager
+1 getStringWidth!(Ljava/lang/String;)I Int String
+1 drawStringWithShadow!(Ljava/lang/String;FFI)I Int String;Float;Float;Int
+1 drawString!(Ljava/lang/String;FFIZ)I Int String;Float;Float;Int;Boolean
+1 trimStringToWidth!(Ljava/lang/String;I)Ljava/lang/String; String String;Int
+1 drawString!(Ljava/lang/String;III)I Int String;Int;Int;Int
+1 drawSplitString!(Ljava/lang/String;IIII)V void String;Int;Int;Int;Int
+2 renderStringAligned!(Ljava/lang/String;IIIIZ)I Int String;Int;Int;Int;Int;Boolean
+2 renderSplitString!(Ljava/lang/String;IIIZ)V void String;Int;Int;Int;Boolean
+1 trimStringToWidth!(Ljava/lang/String;IZ)Ljava/lang/String; String String;Int;Boolean
+2 renderStringAtPos!(Ljava/lang/String;Z)V void String;Boolean
+1 setUnicodeFlag!(Z)V void Boolean
+1 getBidiFlag!()Z Boolean
+1 getColorCode!(C)I Int Character
+4 renderUnicodeChar!(CZ)F Float Character;Boolean
+2 loadGlyphTexture!(I)V void Int
+9 getFormatFromString!(Ljava/lang/String;)Ljava/lang/String; String String
+2 renderString!(Ljava/lang/String;FFIZ)I Int String;Float;Float;Int;Boolean
+1 splitStringWidth!(Ljava/lang/String;I)I Int String;Int
+1 setBidiFlag!(Z)V void Boolean
+2 readFontTexture!()V void
+10 isFormatColor!(C)Z Boolean Character
+2 bidiReorder!(Ljava/lang/String;)Ljava/lang/String; String String
+2 readGlyphSizes!()V void
+10 isFormatSpecial!(C)Z Boolean Character
+2 trimStringNewline!(Ljava/lang/String;)Ljava/lang/String; String String
+0 wrapFormattedStringToWidth!(Ljava/lang/String;I)Ljava/lang/String; String String;Int
+2 resetStyles!()V void
+2 sizeStringToWidth!(Ljava/lang/String;I)I Int String;Int
+
+net/minecraft/client/gui/ScaledResolution java.lang.Object
+18 scaledWidthD Double
+18 scaledHeightD Double
+2 scaledWidth Int
+2 scaledHeight Int
+2 scaleFactor Int
+1 getScaledWidth!()I Int
+1 getScaledHeight!()I Int
+1 getScaledWidth_double!()D Double
+1 getScaledHeight_double!()D Double
+1 getScaleFactor!()I Int
+
+net/minecraft/client/gui/GuiScreen net.minecraft.client.gui.Gui
+26 LOGGER org.apache.logging.log4j.Logger
+26 PROTOCOLS java.util.Set<*>
+26 NEWLINE_SPLITTER com.google.common.base.Splitter
+2 selectedButton net.minecraft.client.gui.GuiButton
+2 eventButton Int
+1 mc net.minecraft.client.Minecraft
+4 itemRender net.minecraft.client.renderer.entity.RenderItem
+1 width Int
+1 height Int
+4 buttonList java.util.List<*>
+4 labelList java.util.List<*>
+1 allowUserInput Boolean
+4 fontRendererObj net.minecraft.client.gui.FontRenderer
+2 lastMouseEvent Long
+2 touchValue Int
+2 clickedLinkURI java.net.URI
+4 keyTyped!(CI)V void Character;Int
+1 setGuiSize!(II)V void Int;Int
+1 drawScreen!(IIF)V void Int;Int;Float
+4 mouseClicked!(III)V void Int;Int;Int
+4 mouseClickMove!(IIIJ)V void Int;Int;Int;Long
+1 setWorldAndResolution!(Lnet/minecraft/client/Minecraft;II)V void net.minecraft.client.Minecraft;Int;Int
+4 actionPerformed!(Lnet/minecraft/client/gui/GuiButton;)V void net.minecraft.client.gui.GuiButton
+4 handleComponentClick!(Lnet/minecraft/util/IChatComponent;)Z Boolean net.minecraft.util.IChatComponent
+1 handleComponentHover!(Lnet/minecraft/util/IChatComponent;II)V void net.minecraft.util.IChatComponent;Int;Int
+4 drawCreativeTabHoveringText!(Ljava/lang/String;II)V void String;Int;Int
+4 setText!(Ljava/lang/String;Z)V void String;Boolean
+2 openWebLink!(Ljava/net/URI;)V void java.net.URI
+4 renderToolTip!(Lnet/minecraft/item/ItemStack;II)V void net.minecraft.item.ItemStack;Int;Int
+1 confirmClicked!(ZI)V void Boolean;Int
+1 initGui!()V void
+4 mouseReleased!(III)V void Int;Int;Int
+1 onResize!(Lnet/minecraft/client/Minecraft;II)V void net.minecraft.client.Minecraft;Int;Int
+1 sendChatMessage!(Ljava/lang/String;Z)V void String;Boolean
+1 drawWorldBackground!(I)V void Int
+1 drawDefaultBackground!()V void
+1 drawBackground!(I)V void Int
+1 doesGuiPauseGame!()Z Boolean
+9 isKeyComboCtrlX!(I)Z Boolean Int
+1 updateScreen!()V void
+9 isKeyComboCtrlV!(I)Z Boolean Int
+9 setClipboardString!(Ljava/lang/String;)V void String
+9 isKeyComboCtrlC!(I)Z Boolean Int
+1 sendChatMessage!(Ljava/lang/String;)V void String
+9 isKeyComboCtrlA!(I)Z Boolean Int
+1 handleMouseInput!()V void
+1 handleKeyboardInput!()V void
+1 onGuiClosed!()V void
+9 getClipboardString!()Ljava/lang/String; String
+1 handleInput!()V void
+9 isCtrlKeyDown!()Z Boolean
+9 isShiftKeyDown!()Z Boolean
+9 isAltKeyDown!()Z Boolean
+
+net/minecraft/util/Timer java.lang.Object
+0 ticksPerSecond Float
+1 elapsedTicks Int
+1 renderPartialTicks Float
+1 timerSpeed Float
+1 elapsedPartialTicks Float
+2 lastHRTime Double
+2 lastSyncSysClock Long
+2 lastSyncHRClock Long
+2 counter Long
+2 timeSyncAdjustment Double
+1 updateTimer!()V void
