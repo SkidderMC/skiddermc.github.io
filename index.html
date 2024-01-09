@@ -35,7 +35,7 @@
                 <img src="./img/blu.png" class="img" />
                 <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
                     <div class="mdui-card-primary" style="text-align: center;">
-                        <div class="mdui-card-primary-title">LiquidBouncePlusReborn</div>
+                        <div class="mdui-card-primary-title">FDPClient</div>
                         <div class="mdui-card-primary-subtitle">Latest github actions<br/>Downloads may contain bugs as they are pre release</div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
          <h2> </h2>
 
          <p> </p>
-         <button class="btn" style="width:100%"><a href="https://nightly.link/skiddermc/FDPClient/workflows/build/main/fdpclient.zip"</a><i class="fa fa-download"></i> Download the latest beta</button>
+         <button class="btn" style="width:100%"><a href="https://nightly.link/SkidderMC/FDPClient/workflows/build/main/fdpclient.zip"</a><i class="fa fa-download"></i> Download the latest beta</button>
         <div class="space"></div>
         <div class="mdui-container">
             <table class="mdui-table mdui-hoverable">
@@ -113,11 +113,11 @@
                 branch = "stable"
             }
             verJson.push({
-                link: "https://github.com/skiddermc/FDPClient/commit/" + sha,
+                link: "https://github.com/SkidderMC/FDPClient/commit/" + sha,
                 sha: sha,
                 time: new Date(time),
                 msg: msg,
-                download_link: "https://nightly.link/skiddermc/FDPClient/actions/runs/" + artifact_id + "/fdpclient.zip",
+                download_link: "https://nightly.link/SkidderMC/FDPClient/actions/runs/" + artifact_id + "/fdpclient.zip",
                 branch: branch
             })
             refresh()
@@ -138,7 +138,7 @@
             })
         }
 
-        $.get("https://api.github.com/repos/skiddermc/FDPClient/actions/runs", function(data, status) {
+        $.get("https://api.github.com/repos/SkidderMC/FDPClient/actions/runs", function(data, status) {
             data.workflow_runs.forEach(element => {
                     addVer(element.head_commit.id, element.head_commit.timestamp, element.head_commit.message, element.id, element.head_branch)
               
