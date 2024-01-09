@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>---- FDP betas ----</title>
-     <meta content="FDPCLIENT (click here to download)" property="og:title" />
-     <meta content="FDP betas click the above to download" property="og:description" />
+    <title>---- FDPClient betas ----</title>
+     <meta content="FDPCLient (click here to download)" property="og:title" />
+     <meta content="FDP Client betas click the above to download" property="og:description" />
      <meta content="https://skiddermc.github.io/download" property="og:url" />
+     <meta content="https://raw.githubusercontent.com/fdpmc/fdpmc.github.io/main/img/fdpdownload.png" property="og:image" />
      <meta name="twitter:card" content="summary_large_image">
      <meta content="#43B581" data-react-helmet="true" name="theme-color" />
     
@@ -31,8 +32,8 @@
     <br/>
     <div class="mdui-container">
         <div class="mdui-card mdui-hoverable">
-            <div class="mdui-card-media" style="overflow: hidden;height: 120px;">
-                <img src="./img/blu.png" class="img" />
+            <div class="mdui-card-media" style="overflow: hidden;height: 400px;">
+                <img src="img/blue.png" class="img" />
                 <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
                     <div class="mdui-card-primary" style="text-align: center;">
                         <div class="mdui-card-primary-title">FDPClient</div>
@@ -65,7 +66,7 @@
          <h2> </h2>
 
          <p> </p>
-         <button class="btn" style="width:100%"><a href="https://nightly.link/SkidderMC/FDPClient/workflows/build/main/fdpclient.zip"</a><i class="fa fa-download"></i> Download the latest beta</button>
+         <button class="btn" style="width:100%"><a href="https://nightly.link/SkidderMC/FDPClient/workflows/build/main/FDPClient.zip"</a><i class="fa fa-download"></i> Download the latest beta</button>
         <div class="space"></div>
         <div class="mdui-container">
             <table class="mdui-table mdui-hoverable">
@@ -102,8 +103,8 @@
     </div>
 
     <!-- JavaScript Libraries -->
-    <script src="./BetaDependencies/jquery.min.js"></script>
-    <script src="./BetaDependencies/jquery-migrate.min.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
 
     <script>
         var verJson = []
@@ -117,7 +118,7 @@
                 sha: sha,
                 time: new Date(time),
                 msg: msg,
-                download_link: "https://nightly.link/SkidderMC/FDPClient/actions/runs/" + artifact_id + "/fdpclient.zip",
+                download_link: "https://nightly.link/SkidderMC/FDPClient/actions/runs/" + artifact_id + "/FDPClient.zip",
                 branch: branch
             })
             refresh()
